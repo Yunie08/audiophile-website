@@ -1,5 +1,5 @@
-import { ReactComponent as AudiophileLogo } from "../../assets/images/shared/desktop/logo.svg";
-import { ReactComponent as CartIcon } from "../../assets/images/shared/desktop/icon-cart.svg";
+import { ReactComponent as AudiophileLogo } from "../../static/images/shared/desktop/logo.svg";
+import { ReactComponent as CartIcon } from "../../static/images/shared/desktop/icon-cart.svg";
 
 import {
   Header,

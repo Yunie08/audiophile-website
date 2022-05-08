@@ -5,7 +5,7 @@ const colors = {
   backgroundMain: "#FAFAFA",
   primaryHover: "#FABF85",
   light: "#FFFFFF",
-  dark: "000000",
+  dark: "#000000",
 };
 
 export default colors;

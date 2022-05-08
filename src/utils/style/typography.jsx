@@ -7,42 +7,42 @@ const titleStyle = css`
   color: ${colors.dark};
 `;
 
-export const Title1 = styled.h1`
+export const h1Style = css`
   font-size: 5.6rem;
   line-height: 5.8rem;
   letter-spacing: 0.2rem;
   ${titleStyle}
 `;
 
-export const Title2 = styled.h2`
+export const h2Style = css`
   font-size: 4rem;
   line-height: 4.4rem;
   letter-spacing: 0.15rem;
   ${titleStyle}
 `;
 
-export const Title3 = styled.h3`
+export const h3Style = css`
   font-size: 3.2rem;
   line-height: 3.6rem;
   letter-spacing: 0.115rem;
   ${titleStyle}
 `;
 
-export const Title4 = styled.h4`
+export const h4Style = css`
   font-size: 2.8rem;
   line-height: 3.8rem;
   letter-spacing: 0.2rem;
   ${titleStyle}
 `;
 
-export const Title5 = styled.h5`
+export const h5Style = css`
   font-size: 2.4rem;
   line-height: 3.3rem;
   letter-spacing: 0.17rem;
   ${titleStyle}
 `;
 
-export const Title6 = styled.h6`
+export const h6Style = styled.h6`
   font-size: 1.8rem;
   line-height: 2.4rem;
   letter-spacing: 0.13rem;

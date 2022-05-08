@@ -5,9 +5,10 @@ import { Link } from "react-router-dom";
 
 export const Header = styled.header`
   width: 100%;
-  background-color: black;
+  background-color: transparent;
   display: flex;
   justify-content: center;
+  position: fixed;
 `;
 
 export const NavContainer = styled.nav`
@@ -17,6 +18,7 @@ export const NavContainer = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #979797;
 `;
 
 export const NavLinkContainer = styled.div`
