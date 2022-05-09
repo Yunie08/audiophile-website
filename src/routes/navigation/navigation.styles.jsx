@@ -10,6 +10,7 @@ export const Header = styled.header`
   display: flex;
   justify-content: center;
   position: fixed;
+  z-index: 100;
 `;
 
 export const NavContainer = styled.nav`

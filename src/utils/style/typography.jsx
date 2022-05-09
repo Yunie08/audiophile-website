@@ -42,7 +42,7 @@ export const h5Style = css`
   ${titleStyle}
 `;
 
-export const h6Style = styled.h6`
+export const h6Style = css`
   font-size: 1.8rem;
   line-height: 2.4rem;
   letter-spacing: 0.13rem;

@@ -61,6 +61,8 @@ export const InvertedButton = styled(BaseButton)`
 export const ArrowButton = styled(BaseButton)`
   color: #808080;
   background: transparent;
+  min-width: auto;
+  padding: 0 13px 0 0;
 
   &::after {
     font-family: "Font Awesome 6 Free";
@@ -68,10 +70,10 @@ export const ArrowButton = styled(BaseButton)`
     color: ${colors.primary};
     background-color: transparent;
     opacity: 1;
-    top: auto;
+    top: 50%;
+    transform: translateY(-50%);
     bottom: auto;
     left: auto;
-    right: 12px;
   }
 
   &:hover {
