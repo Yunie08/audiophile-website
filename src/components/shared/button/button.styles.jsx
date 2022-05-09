@@ -2,6 +2,7 @@ import styled from "styled-components";
 import colors from "../../../utils/style/colors";
 
 export const BaseButton = styled.button`
+  font-family: inherit;
   min-width: 16rem;
   width: auto;
   height: 4.8rem;
@@ -16,6 +17,7 @@ export const BaseButton = styled.button`
   cursor: pointer;
   position: relative;
   z-index: 1;
+  margin: 2.8rem 0;
 
   &::after {
     content: "";

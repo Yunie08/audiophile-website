@@ -1,4 +1,4 @@
-const size = {
+const sizes = {
   mobileS: "320px",
   mobileM: "375px",
   mobileL: "425px",
@@ -8,13 +8,17 @@ const size = {
   desktop: "2560px",
 };
 
+const getMediaQuery = (size) => {
+  return `media: screen and (min-width: ${size})`;
+};
+
 export const device = {
-  mobileS: `(min-width: ${size.mobileS})`,
-  mobileM: `(min-width: ${size.mobileM})`,
-  mobileL: `(min-width: ${size.mobileL})`,
-  tablet: `(min-width: ${size.tablet})`,
-  laptop: `(min-width: ${size.laptop})`,
-  laptopL: `(min-width: ${size.laptopL})`,
-  desktop: `(min-width: ${size.desktop})`,
-  desktopL: `(min-width: ${size.desktop})`,
+  mobileS: getMediaQuery(sizes.mobileS),
+  mobileM: getMediaQuery(sizes.mobileM),
+  mobileL: getMediaQuery(sizes.mobileL),
+  tablet: getMediaQuery(sizes.tablet),
+  laptop: `media: screen and (min-width: ${sizes.laptop})`,
+  laptopL: `media: screen and (min-width: ${sizes.laptopL})`,
+  desktop: getMediaQuery(sizes.desktop),
+  desktopL: getMediaQuery(sizes.desktopL),
 };

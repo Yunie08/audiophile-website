@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 
 export const Header = styled.header`
   width: 100%;
-  background-color: transparent;
+  /* background-color: transparent; */
+  background-color: ${colors.dark};
   display: flex;
   justify-content: center;
   position: fixed;

@@ -49,7 +49,7 @@ export const h6Style = styled.h6`
   ${titleStyle}
 `;
 
-export const OverlineStyle = css`
+export const overlineStyle = css`
   font-size: 1.4rem;
   line-height: 1.9rem;
   letter-spacing: 1rem;
@@ -57,7 +57,7 @@ export const OverlineStyle = css`
   text-transform: uppercase;
 `;
 
-export const SubTitleStyle = css`
+export const subTitleStyle = css`
   font-size: 1.3rem;
   line-height: 2.5rem;
   letter-spacing: 0.1rem;

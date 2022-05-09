@@ -1,7 +1,14 @@
 // TODO: Link see product button to product page
 
 import { LayoutContainer, Section } from "../../../utils/style/layout";
-import { HeroSection, ImageContainer, TextContainer } from "./hero.styles";
+import {
+  HeroSection,
+  ImageContainer,
+  TextContainer,
+  NewProductOverline,
+  ProductName,
+  ProductDescription,
+} from "./hero.styles";
 import Button from "../../shared/button/button.component";
 
 const Hero = () => {
@@ -10,15 +17,12 @@ const Hero = () => {
       <ImageContainer>
         <LayoutContainer>
           <TextContainer>
-            <span>New product</span>
-            <p>
-              XX99 MARK II <br />
-              headphones
-            </p>
-            <h1>
+            <NewProductOverline>New product</NewProductOverline>
+            <ProductName>XX99 MARK II headphones</ProductName>
+            <ProductDescription>
               Experience natural, lifelike audio and exceptional build quality
               made for the passionate music enthusiast.
-            </h1>
+            </ProductDescription>
             <Button>See product</Button>
           </TextContainer>
         </LayoutContainer>
