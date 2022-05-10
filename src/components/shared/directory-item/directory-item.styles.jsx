@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 import colors from "../../../utils/style/colors";
 import { h6Style } from "../../../utils/style/typography";
+import { radiusCards } from "../../../utils/style/variables";
 
 export const CategoryContainer = styled.div`
   height: 165px;
@@ -9,7 +10,7 @@ export const CategoryContainer = styled.div`
   grid-template-rows: 57% 20% 23%;
   justify-content: center;
   background-color: ${colors.tertiary};
-  border-radius: 0.8rem;
+  border-radius: ${radiusCards};
   margin-bottom: -30px;
 
   h2 {

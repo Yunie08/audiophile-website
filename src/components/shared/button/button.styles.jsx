@@ -7,25 +7,25 @@ export const BaseButton = styled.button`
   width: auto;
   height: 4.8rem;
   padding: 1.5rem 3rem;
+  margin: 2.5rem 0;
   font-size: 1.3rem;
   letter-spacing: 0.1rem;
   font-weight: 700;
   text-transform: uppercase;
   color: ${colors.light};
   background: ${colors.primary};
-  border: none;
+  border: 1px solid ${colors.primary};
   cursor: pointer;
   position: relative;
   z-index: 1;
-  margin: 2.8rem 0;
 
   &::after {
     content: "";
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
     background-color: ${colors.primaryHover};
     opacity: 0;
     z-index: -1;
@@ -36,6 +36,16 @@ export const BaseButton = styled.button`
       transition: opacity ease-out 150ms;
       opacity: 1;
     }
+  }
+`;
+
+export const DarkButton = styled(BaseButton)`
+  color: ${colors.light};
+  background: ${colors.dark};
+  border: 1px solid ${colors.dark};
+
+  &::after {
+    background-color: #4c4c4c;
   }
 `;
 
@@ -63,6 +73,7 @@ export const ArrowButton = styled(BaseButton)`
   background: transparent;
   min-width: auto;
   padding: 0 13px 0 0;
+  border: none;
 
   &::after {
     font-family: "Font Awesome 6 Free";

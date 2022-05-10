@@ -1,7 +1,13 @@
-import { BaseButton, InvertedButton, ArrowButton } from "./button.styles";
+import {
+  BaseButton,
+  DarkButton,
+  InvertedButton,
+  ArrowButton,
+} from "./button.styles";
 
 export const BUTTON_TYPES_CLASSES = {
   base: "base",
+  dark: "dark",
   inverted: "inverted",
   arrow: "arrow",
 };
@@ -9,6 +15,7 @@ export const BUTTON_TYPES_CLASSES = {
 const getButton = (buttonType = BUTTON_TYPES_CLASSES.base) =>
   ({
     [BUTTON_TYPES_CLASSES.base]: BaseButton,
+    [BUTTON_TYPES_CLASSES.dark]: DarkButton,
     [BUTTON_TYPES_CLASSES.inverted]: InvertedButton,
     [BUTTON_TYPES_CLASSES.arrow]: ArrowButton,
   }[buttonType]);

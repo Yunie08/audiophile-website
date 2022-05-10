@@ -1,5 +1,5 @@
 import { LayoutContainer } from "../../../utils/style/layout";
-import ProductsFocusContainer from "./products-focus.styles";
+import { ProductsFocusContainer } from "./products-focus.styles";
 import ProductFocusLarge from "../product-focus-large/product-focus-large.component";
 
 const productsFocused = {

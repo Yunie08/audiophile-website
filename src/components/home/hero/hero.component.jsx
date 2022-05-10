@@ -1,15 +1,16 @@
 // TODO: Link see product button to product page
 
 import { LayoutContainer, Section } from "../../../utils/style/layout";
-import {
-  HeroSection,
-  ImageContainer,
-  TextContainer,
-  NewProductOverline,
-  ProductName,
-  ProductDescription,
-} from "./hero.styles";
-import Button from "../../shared/button/button.component";
+import { HeroSection, ImageContainer, TextContainer } from "./hero.styles";
+import ProductCta from "../../shared/product-cta/product-cta.component";
+
+const heroProduct = {
+  isNew: true,
+  name: "XX99 Mark II Headphones",
+  description:
+    "Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.",
+  route: "shop/headphones/xx99-mark-two-headphones",
+};
 
 const Hero = () => {
   return (
@@ -17,13 +18,11 @@ const Hero = () => {
       <ImageContainer>
         <LayoutContainer>
           <TextContainer>
-            <NewProductOverline>New product</NewProductOverline>
-            <ProductName>XX99 MARK II headphones</ProductName>
-            <ProductDescription>
-              Experience natural, lifelike audio and exceptional build quality
-              made for the passionate music enthusiast.
-            </ProductDescription>
-            <Button>See product</Button>
+            <ProductCta
+              product={heroProduct}
+              ctaType="hero"
+              buttonType="base"
+            />
           </TextContainer>
         </LayoutContainer>
       </ImageContainer>

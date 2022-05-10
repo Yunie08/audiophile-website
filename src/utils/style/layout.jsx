@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 export const LayoutContainer = styled.div`
   max-width: 1100px;
-  width: 90%;
+  width: 95%;
 `;
 
 export const Section = styled.section`
