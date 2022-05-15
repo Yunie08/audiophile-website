@@ -3,24 +3,15 @@ import colors from "../../utils/style/colors";
 
 import { Link } from "react-router-dom";
 
-export const Header = styled.header`
-  width: 100%;
-  /* background-color: transparent; */
-  background-color: ${colors.dark};
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  z-index: 100;
-`;
-
 export const NavContainer = styled.nav`
-  max-width: 1100px;
-  width: 90%;
+  max-width: 1110px;
+  width: ${(props) => props.parent === "header" && "90%"};
   height: 9.6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #979797;
+  border-bottom: ${(props) =>
+    props.parent === "header" && "1px solid #979797"}; ;
 `;
 
 export const NavLinkContainer = styled.div`

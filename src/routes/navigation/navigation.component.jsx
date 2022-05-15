@@ -1,31 +1,26 @@
 import { ReactComponent as AudiophileLogo } from "../../static/images/shared/desktop/logo.svg";
 import { ReactComponent as CartIcon } from "../../static/images/shared/desktop/icon-cart.svg";
 
-import {
-  Header,
-  NavContainer,
-  NavLinkContainer,
-  NavLink,
-} from "./navigation.styles";
+import { NavContainer, NavLinkContainer, NavLink } from "./navigation.styles";
 
-const Navigation = () => {
+const Navigation = ({ parent }) => {
   return (
-    <Header>
-      <NavContainer>
-        <NavLink to="/">
-          <AudiophileLogo alt="Audiophile" />
-        </NavLink>
-        <NavLinkContainer>
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/shop/headphones">Headphones</NavLink>
-          <NavLink to="/shop/speakers">Speakers</NavLink>
-          <NavLink to="/shop/earphones">Earphones</NavLink>
-        </NavLinkContainer>
+    <NavContainer parent={parent}>
+      <NavLink to="/">
+        <AudiophileLogo alt="Audiophile" />
+      </NavLink>
+      <NavLinkContainer>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/shop/headphones">Headphones</NavLink>
+        <NavLink to="/shop/speakers">Speakers</NavLink>
+        <NavLink to="/shop/earphones">Earphones</NavLink>
+      </NavLinkContainer>
+      {parent === "header" && (
         <NavLink to="/cart">
           <CartIcon />
         </NavLink>
-      </NavContainer>
-    </Header>
+      )}
+    </NavContainer>
   );
 };
 

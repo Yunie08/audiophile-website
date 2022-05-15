@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import { radiusCards } from "./variables";
 
 export const LayoutContainer = styled.div`
-  max-width: 1100px;
+  max-width: 1110px;
   width: 95%;
 `;
 
