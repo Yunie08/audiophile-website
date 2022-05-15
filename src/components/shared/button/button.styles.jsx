@@ -51,7 +51,7 @@ export const DarkButton = styled(BaseButton)`
 
 export const InvertedButton = styled(BaseButton)`
   color: ${colors.dark};
-  background: ${colors.light};
+  background: transparent;
   border: 1px solid ${colors.dark};
 
   &::after {

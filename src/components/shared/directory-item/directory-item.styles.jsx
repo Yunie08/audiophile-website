@@ -5,7 +5,7 @@ import { h6Style } from "../../../utils/style/typography";
 import { radiusCards } from "../../../utils/style/variables";
 
 export const CategoryContainer = styled.div`
-  height: 165px;
+  height: 204px;
   display: grid;
   grid-template-rows: 57% 20% 23%;
   justify-content: center;
@@ -26,7 +26,7 @@ export const CategoryContainer = styled.div`
 `;
 
 export const ImageContainer = styled.div`
-  height: 140px;
+  height: 188.5px;
   align-self: flex-end;
   img {
     height: 100%;

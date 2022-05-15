@@ -1,6 +1,8 @@
 import { LayoutContainer } from "../../../utils/style/layout";
 import { ProductsFocusContainer } from "./products-focus.styles";
 import ProductFocusLarge from "../product-focus-large/product-focus-large.component";
+import ProductFocusMedium from "../product-focus-medium/product-focus-medium.component";
+import ProductFocusSplit from "../product-focus-split/product-focus-split.component";
 
 const productsFocused = {
   zx9speaker: {
@@ -15,7 +17,7 @@ const productsFocused = {
     route: 'shop/speakers/"zx9-speaker"',
   },
   zx7speaker: {
-    name: "ZX9 Speaker",
+    name: "ZX7 Speaker",
     imageUrl: {
       desktop: "https://i.ibb.co/mcMcxDm/image-speaker-zx7.jpg",
       tablet: "https://i.ibb.co/6w8Cxzk/image-speaker-zx7.jpg",
@@ -24,12 +26,12 @@ const productsFocused = {
     },
   },
   yx1earphones: {
-    name: "ZX9 Speaker",
+    name: "YX1 Earphones",
     imageUrl: {
-      desktop: "https://i.ibb.co/mcMcxDm/image-speaker-zx7.jpg",
-      tablet: "https://i.ibb.co/6w8Cxzk/image-speaker-zx7.jpg",
-      mobile: "https://i.ibb.co/19MxNn0/image-speaker-zx7.jpg",
-      route: 'shop/speakers/"yx1-earphones',
+      desktop: "https://i.ibb.co/SKFhffZ/image-earphones-yx1.jpg",
+      tablet: "https://i.ibb.co/S0cCP60/image-earphones-yx1.jpg",
+      mobile: "https://i.ibb.co/vdnmgYD/image-earphones-yx1.jpg",
+      route: 'shop/earphones/"yx1-earphones',
     },
   },
 };
@@ -38,11 +40,9 @@ const ProductsFocus = () => {
   return (
     <LayoutContainer as="section">
       <ProductsFocusContainer>
-        <ProductFocusLarge
-          product={productsFocused.zx9speaker}
-        ></ProductFocusLarge>
-        <div></div>
-        <div></div>
+        <ProductFocusLarge product={productsFocused.zx9speaker} />
+        <ProductFocusMedium product={productsFocused.zx7speaker} />
+        <ProductFocusSplit product={productsFocused.yx1earphones} />
       </ProductsFocusContainer>
     </LayoutContainer>
   );
