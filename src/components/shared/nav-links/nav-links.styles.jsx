@@ -91,4 +91,8 @@ export const NavLink = styled(Link)`
   &:hover {
     color: ${colors.primary};
   }
+
+  @media ${device.mobileL} {
+    height: 8.9rem;
+  }
 `;

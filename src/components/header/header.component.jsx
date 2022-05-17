@@ -5,10 +5,14 @@ import { StyledHeader } from "./header.styles";
 
 const Header = () => {
   const isSmallScreen = useMediaQuery("(max-width: 991px)");
-
+  const isMobile = useMediaQuery("(max-width: 768px)");
   return (
     <StyledHeader>
-      <Navigation parent="header" isSmallScreen={isSmallScreen} />
+      <Navigation
+        parent="header"
+        isMobile={isMobile}
+        isSmallScreen={isSmallScreen}
+      />
     </StyledHeader>
   );
 };

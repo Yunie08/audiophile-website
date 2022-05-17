@@ -4,7 +4,7 @@ import { device } from "../../utils/style/breakpoints";
 
 export const NavContainer = styled.nav`
   max-width: 1110px;
-  width: ${(props) => props.parent === "header" && "90%"};
+  width: ${(props) => props.parent === "header" && "95%"};
 
   display: flex;
   justify-content: space-between;
@@ -13,9 +13,10 @@ export const NavContainer = styled.nav`
 
   @media ${device.tablet} {
     flex-wrap: wrap;
-
-    &:nth-child(2) {
-      margin-right: auto !important;
-    }
   }
+`;
+
+export const LeftPart = styled.div`
+  display: flex;
+  column-gap: 42px;
 `;
