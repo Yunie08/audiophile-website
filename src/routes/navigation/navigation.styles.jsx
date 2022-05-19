@@ -9,7 +9,7 @@ export const NavContainer = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: ${(props) => props.parent === "header" && "1px solid #979797"};
+  border-bottom: ${(props) => props.parent === "header" && "1px solid #333333"};
 
   @media ${device.tablet} {
     flex-wrap: wrap;

@@ -4,15 +4,15 @@
     "slug": "yx1-earphones",
     "name": "YX1 Wireless Earphones",
     "image": {
-      "mobile": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652948515/Audiophile/product-yx1-earphones/mobile/image-product_aige7l.jpg",
-      "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652948530/Audiophile/product-yx1-earphones/tablet/image-product_ucjsp7.jpg",
-      "desktop": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652948501/Audiophile/product-yx1-earphones/desktop/image-product_jzes5m.jpg"
+      "mobile": "./assets/product-yx1-earphones/mobile/image-product.jpg",
+      "tablet": "./assets/product-yx1-earphones/tablet/image-product.jpg",
+      "desktop": "./assets/product-yx1-earphones/desktop/image-product.jpg"
     },
     "category": "earphones",
     "categoryImage": {
-      "mobile": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652948515/Audiophile/product-yx1-earphones/mobile/image-category-page-preview_hjtxuo.jpg",
-      "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652948530/Audiophile/product-yx1-earphones/tablet/image-category-page-preview_tijq8v.jpg",
-      "desktop": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652948500/Audiophile/product-yx1-earphones/desktop/image-category-page-preview_zlwbaq.jpg"
+      "mobile": "./assets/product-yx1-earphones/mobile/image-category-page-preview.jpg",
+      "tablet": "./assets/product-yx1-earphones/tablet/image-category-page-preview.jpg",
+      "desktop": "./assets/product-yx1-earphones/desktop/image-category-page-preview.jpg"
     },
     "new": true,
     "price": 599,
@@ -42,19 +42,19 @@
     ],
     "gallery": {
       "first": {
-        "mobile": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652948517/Audiophile/product-yx1-earphones/mobile/image-gallery-1_wovsn3.jpg",
-        "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652948533/Audiophile/product-yx1-earphones/tablet/image-gallery-1_plst1w.jpg",
-        "desktop": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652948500/Audiophile/product-yx1-earphones/desktop/image-gallery-1_risuy7.jpg"
+        "mobile": "./assets/product-yx1-earphones/mobile/image-gallery-1.jpg",
+        "tablet": "./assets/product-yx1-earphones/tablet/image-gallery-1.jpg",
+        "desktop": "./assets/product-yx1-earphones/desktop/image-gallery-1.jpg"
       },
       "second": {
-        "mobile": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652948518/Audiophile/product-yx1-earphones/mobile/image-gallery-2_tdasd7.jpg",
-        "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652948530/Audiophile/product-yx1-earphones/tablet/image-gallery-2_i4drsx.jpg",
-        "desktop": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652948501/Audiophile/product-yx1-earphones/desktop/image-gallery-2_ect6x2.jpg"
+        "mobile": "./assets/product-yx1-earphones/mobile/image-gallery-2.jpg",
+        "tablet": "./assets/product-yx1-earphones/tablet/image-gallery-2.jpg",
+        "desktop": "./assets/product-yx1-earphones/desktop/image-gallery-2.jpg"
       },
       "third": {
-        "mobile": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652948518/Audiophile/product-yx1-earphones/mobile/image-gallery-3_eencoe.jpg",
-        "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652948531/Audiophile/product-yx1-earphones/tablet/image-gallery-3_w2qtow.jpg",
-        "desktop": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652948502/Audiophile/product-yx1-earphones/desktop/image-gallery-3_naagvr.jpg"
+        "mobile": "./assets/product-yx1-earphones/mobile/image-gallery-3.jpg",
+        "tablet": "./assets/product-yx1-earphones/tablet/image-gallery-3.jpg",
+        "desktop": "./assets/product-yx1-earphones/desktop/image-gallery-3.jpg"
       }
     },
     "others": [
@@ -92,15 +92,15 @@
     "slug": "xx59-headphones",
     "name": "XX59 Headphones",
     "image": {
-      "mobile": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652948026/Audiophile/product-xx59-headphones/mobile/image-product_c5b7ip.jpg",
-      "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652948005/Audiophile/product-xx59-headphones/tablet/image-product_kernsf.jpg",
-      "desktop": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652947908/Audiophile/product-xx59-headphones/desktop/image-product_jhjudm.jpg"
+      "mobile": "./assets/product-xx59-headphones/mobile/image-product.jpg",
+      "tablet": "./assets/product-xx59-headphones/tablet/image-product.jpg",
+      "desktop": "./assets/product-xx59-headphones/desktop/image-product.jpg"
     },
     "category": "headphones",
     "categoryImage": {
-      "mobile": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652948026/Audiophile/product-xx59-headphones/mobile/image-category-page-preview_yahgth.jpg",
-      "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652948005/Audiophile/product-xx59-headphones/tablet/image-category-page-preview_qef2h4.jpg",
-      "desktop": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652947909/Audiophile/product-xx59-headphones/desktop/image-category-page-preview_q7qzdp.jpg"
+      "mobile": "./assets/product-xx59-headphones/mobile/image-category-page-preview.jpg",
+      "tablet": "./assets/product-xx59-headphones/tablet/image-category-page-preview.jpg",
+      "desktop": "./assets/product-xx59-headphones/desktop/image-category-page-preview.jpg"
     },
     "new": false,
     "price": 899,
@@ -126,19 +126,19 @@
     ],
     "gallery": {
       "first": {
-        "mobile": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652948028/Audiophile/product-xx59-headphones/mobile/image-gallery-1_yytqvb.jpg",
-        "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652948006/Audiophile/product-xx59-headphones/tablet/image-gallery-1_guqtff.jpg",
-        "desktop": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652947909/Audiophile/product-xx59-headphones/desktop/image-gallery-1_aoe70n.jpg"
+        "mobile": "./assets/product-xx59-headphones/mobile/image-gallery-1.jpg",
+        "tablet": "./assets/product-xx59-headphones/tablet/image-gallery-1.jpg",
+        "desktop": "./assets/product-xx59-headphones/desktop/image-gallery-1.jpg"
       },
       "second": {
-        "mobile": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652948027/Audiophile/product-xx59-headphones/mobile/image-gallery-2_up7kpp.jpg",
-        "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652948005/Audiophile/product-xx59-headphones/tablet/image-gallery-2_bzfl24.jpg",
-        "desktop": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652947908/Audiophile/product-xx59-headphones/desktop/image-gallery-2_fzh2oh.jpg"
+        "mobile": "./assets/product-xx59-headphones/mobile/image-gallery-2.jpg",
+        "tablet": "./assets/product-xx59-headphones/tablet/image-gallery-2.jpg",
+        "desktop": "./assets/product-xx59-headphones/desktop/image-gallery-2.jpg"
       },
       "third": {
-        "mobile": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652948027/Audiophile/product-xx59-headphones/mobile/image-gallery-3_qvq3yz.jpg",
-        "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652948005/Audiophile/product-xx59-headphones/tablet/image-gallery-3_rnlxne.jpg",
-        "desktop": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652947909/Audiophile/product-xx59-headphones/desktop/image-gallery-3_qkvbqu.jpg"
+        "mobile": "./assets/product-xx59-headphones/mobile/image-gallery-3.jpg",
+        "tablet": "./assets/product-xx59-headphones/tablet/image-gallery-3.jpg",
+        "desktop": "./assets/product-xx59-headphones/desktop/image-gallery-3.jpg"
       }
     },
     "others": [
@@ -176,15 +176,15 @@
     "slug": "xx99-mark-one-headphones",
     "name": "XX99 Mark I Headphones",
     "image": {
-      "mobile": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949113/Audiophile/product-xx99-mark-one-headphones/mobile/image-product_rpfkco.jpg",
-      "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949140/Audiophile/product-xx99-mark-one-headphones/tablet/image-product_g8rtcq.jpg",
-      "desktop": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949097/Audiophile/product-xx99-mark-one-headphones/desktop/image-product_npih4g.jpg"
+      "mobile": "./assets/product-xx99-mark-one-headphones/mobile/image-product.jpg",
+      "tablet": "./assets/product-xx99-mark-one-headphones/tablet/image-product.jpg",
+      "desktop": "./assets/product-xx99-mark-one-headphones/desktop/image-product.jpg"
     },
     "category": "headphones",
     "categoryImage": {
-      "mobile": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949112/Audiophile/product-xx99-mark-one-headphones/mobile/image-category-page-preview_bdnnki.jpg",
-      "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949140/Audiophile/product-xx99-mark-one-headphones/tablet/image-category-page-preview_oyahtc.jpg",
-      "desktop": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949095/Audiophile/product-xx99-mark-one-headphones/desktop/image-category-page-preview_gr2ysc.jpg"
+      "mobile": "./assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.jpg",
+      "tablet": "./assets/product-xx99-mark-one-headphones/tablet/image-category-page-preview.jpg",
+      "desktop": "./assets/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg"
     },
     "new": false,
     "price": 1750,
@@ -210,19 +210,19 @@
     ],
     "gallery": {
       "first": {
-        "mobile": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949113/Audiophile/product-xx99-mark-one-headphones/mobile/image-gallery-1_kpbapo.jpg",
-        "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949140/Audiophile/product-xx99-mark-one-headphones/tablet/image-gallery-1_lcqjid.jpg",
-        "desktop": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949095/Audiophile/product-xx99-mark-one-headphones/desktop/image-gallery-1_hm5oxf.jpg"
+        "mobile": "./assets/product-xx99-mark-one-headphones/mobile/image-gallery-1.jpg",
+        "tablet": "./assets/product-xx99-mark-one-headphones/tablet/image-gallery-1.jpg",
+        "desktop": "./assets/product-xx99-mark-one-headphones/desktop/image-gallery-1.jpg"
       },
       "second": {
-        "mobile": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949113/Audiophile/product-xx99-mark-one-headphones/mobile/image-gallery-2_xwrkzi.jpg",
-        "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949140/Audiophile/product-xx99-mark-one-headphones/tablet/image-gallery-2_iomjgi.jpg",
-        "desktop": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949095/Audiophile/product-xx99-mark-one-headphones/desktop/image-gallery-2_whkwbl.jpg"
+        "mobile": "./assets/product-xx99-mark-one-headphones/mobile/image-gallery-2.jpg",
+        "tablet": "./assets/product-xx99-mark-one-headphones/tablet/image-gallery-2.jpg",
+        "desktop": "./assets/product-xx99-mark-one-headphones/desktop/image-gallery-2.jpg"
       },
       "third": {
-        "mobile": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949113/Audiophile/product-xx99-mark-one-headphones/mobile/image-gallery-3_qhnrgx.jpg",
-        "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949141/Audiophile/product-xx99-mark-one-headphones/tablet/image-gallery-3_jinz9v.jpg",
-        "desktop": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949097/Audiophile/product-xx99-mark-one-headphones/desktop/image-gallery-3_uneewt.jpg"
+        "mobile": "./assets/product-xx99-mark-one-headphones/mobile/image-gallery-3.jpg",
+        "tablet": "./assets/product-xx99-mark-one-headphones/tablet/image-gallery-3.jpg",
+        "desktop": "./assets/product-xx99-mark-one-headphones/desktop/image-gallery-3.jpg"
       }
     },
     "others": [
@@ -260,15 +260,15 @@
     "slug": "xx99-mark-two-headphones",
     "name": "XX99 Mark II Headphones",
     "image": {
-      "mobile": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949375/Audiophile/product-xx99-mark-two-headphones/mobile/image-product_ipe0a9.jpg",
-      "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949399/Audiophile/product-xx99-mark-two-headphones/tablet/image-product_vrld0q.jpg",
-      "desktop": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949360/Audiophile/product-xx99-mark-two-headphones/desktop/image-product_wcavui.jpg"
+      "mobile": "./assets/product-xx99-mark-two-headphones/mobile/image-product.jpg",
+      "tablet": "./assets/product-xx99-mark-two-headphones/tablet/image-product.jpg",
+      "desktop": "./assets/product-xx99-mark-two-headphones/desktop/image-product.jpg"
     },
     "category": "headphones",
     "categoryImage": {
-      "mobile": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949376/Audiophile/product-xx99-mark-two-headphones/mobile/image-category-page-preview_shznta.jpg",
-      "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949398/Audiophile/product-xx99-mark-two-headphones/tablet/image-category-page-preview_gbgrzq.jpg",
-      "desktop": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949359/Audiophile/product-xx99-mark-two-headphones/desktop/image-category-page-preview_lldywx.jpg"
+      "mobile": "./assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg",
+      "tablet": "./assets/product-xx99-mark-two-headphones/tablet/image-category-page-preview.jpg",
+      "desktop": "./assets/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg"
     },
     "new": true,
     "price": 2999,
@@ -298,19 +298,19 @@
     ],
     "gallery": {
       "first": {
-        "mobile": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949379/Audiophile/product-xx99-mark-two-headphones/mobile/image-gallery-1_quusgm.jpg",
-        "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949399/Audiophile/product-xx99-mark-two-headphones/tablet/image-gallery-1_mquxrq.jpg",
-        "desktop": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949361/Audiophile/product-xx99-mark-two-headphones/desktop/image-gallery-1_gh26za.jpg"
+        "mobile": "./assets/product-xx99-mark-two-headphones/mobile/image-gallery-1.jpg",
+        "tablet": "./assets/product-xx99-mark-two-headphones/tablet/image-gallery-1.jpg",
+        "desktop": "./assets/product-xx99-mark-two-headphones/desktop/image-gallery-1.jpg"
       },
       "second": {
-        "mobile": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949376/Audiophile/product-xx99-mark-two-headphones/mobile/image-gallery-2_fe35ma.jpg",
-        "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949399/Audiophile/product-xx99-mark-two-headphones/tablet/image-gallery-2_rwcqvc.jpg",
-        "desktop": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949361/Audiophile/product-xx99-mark-two-headphones/desktop/image-gallery-2_uspytw.jpg"
+        "mobile": "./assets/product-xx99-mark-two-headphones/mobile/image-gallery-2.jpg",
+        "tablet": "./assets/product-xx99-mark-two-headphones/tablet/image-gallery-2.jpg",
+        "desktop": "./assets/product-xx99-mark-two-headphones/desktop/image-gallery-2.jpg"
       },
       "third": {
-        "mobile": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949376/Audiophile/product-xx99-mark-two-headphones/mobile/image-gallery-3_kbstod.jpg",
-        "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949400/Audiophile/product-xx99-mark-two-headphones/tablet/image-gallery-3_b2mowh.jpg",
-        "desktop": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949362/Audiophile/product-xx99-mark-two-headphones/desktop/image-gallery-3_s5u18m.jpg"
+        "mobile": "./assets/product-xx99-mark-two-headphones/mobile/image-gallery-3.jpg",
+        "tablet": "./assets/product-xx99-mark-two-headphones/tablet/image-gallery-3.jpg",
+        "desktop": "./assets/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg"
       }
     },
     "others": [
@@ -348,15 +348,15 @@
     "slug": "zx7-speaker",
     "name": "ZX7 Speaker",
     "image": {
-      "mobile": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949810/Audiophile/product-zx7-speaker/mobile/image-product_iomtka.jpg",
-      "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949792/Audiophile/product-zx7-speaker/tablet/image-product_wm1pec.jpg",
-      "desktop": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949773/Audiophile/product-zx7-speaker/desktop/image-product_wa68pz.jpg"
+      "mobile": "./assets/product-zx7-speaker/mobile/image-product.jpg",
+      "tablet": "./assets/product-zx7-speaker/tablet/image-product.jpg",
+      "desktop": "./assets/product-zx7-speaker/desktop/image-product.jpg"
     },
     "category": "speakers",
     "categoryImage": {
-      "mobile": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949809/Audiophile/product-zx7-speaker/mobile/image-category-page-preview_ikrdrg.jpg",
-      "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949791/Audiophile/product-zx7-speaker/tablet/image-category-page-preview_coexdg.jpg",
-      "desktop": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949774/Audiophile/product-zx7-speaker/desktop/image-category-page-preview_aahb97.jpg"
+      "mobile": "./assets/product-zx7-speaker/mobile/image-category-page-preview.jpg",
+      "tablet": "./assets/product-zx7-speaker/tablet/image-category-page-preview.jpg",
+      "desktop": "./assets/product-zx7-speaker/desktop/image-category-page-preview.jpg"
     },
     "new": false,
     "price": 3500,
@@ -386,19 +386,19 @@
     ],
     "gallery": {
       "first": {
-        "mobile": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949810/Audiophile/product-zx7-speaker/mobile/image-gallery-1_offhea.jpg",
-        "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949792/Audiophile/product-zx7-speaker/tablet/image-gallery-1_cqdtpp.jpg",
-        "desktop": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949773/Audiophile/product-zx7-speaker/desktop/image-gallery-1_ob1xal.jpg"
+        "mobile": "./assets/product-zx7-speaker/mobile/image-gallery-1.jpg",
+        "tablet": "./assets/product-zx7-speaker/tablet/image-gallery-1.jpg",
+        "desktop": "./assets/product-zx7-speaker/desktop/image-gallery-1.jpg"
       },
       "second": {
-        "mobile": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949811/Audiophile/product-zx7-speaker/mobile/image-gallery-2_x3arbk.jpg",
-        "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949792/Audiophile/product-zx7-speaker/tablet/image-gallery-2_ot7jhu.jpg",
-        "desktop": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949773/Audiophile/product-zx7-speaker/desktop/image-gallery-2_mc38by.jpg"
+        "mobile": "./assets/product-zx7-speaker/mobile/image-gallery-2.jpg",
+        "tablet": "./assets/product-zx7-speaker/tablet/image-gallery-2.jpg",
+        "desktop": "./assets/product-zx7-speaker/desktop/image-gallery-2.jpg"
       },
       "third": {
-        "mobile": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949811/Audiophile/product-zx7-speaker/mobile/image-gallery-3_fjhfxn.jpg",
-        "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949792/Audiophile/product-zx7-speaker/tablet/image-gallery-3_s0o1i6.jpg",
-        "desktop": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949774/Audiophile/product-zx7-speaker/desktop/image-gallery-3_zok6dt.jpg"
+        "mobile": "./assets/product-zx7-speaker/mobile/image-gallery-3.jpg",
+        "tablet": "./assets/product-zx7-speaker/tablet/image-gallery-3.jpg",
+        "desktop": "./assets/product-zx7-speaker/desktop/image-gallery-3.jpg"
       }
     },
     "others": [
@@ -436,15 +436,15 @@
     "slug": "zx9-speaker",
     "name": "ZX9 Speaker",
     "image": {
-      "mobile": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652950168/Audiophile/product-zx9-speaker/mobile/image-product_lgf0ds.jpg",
-      "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652950184/Audiophile/product-zx9-speaker/tablet/image-product_htcdqa.jpg",
-      "desktop": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652950450/Audiophile/product-zx9-speaker/desktop/image-product_lxn2h5.jpg"
+      "mobile": "./assets/product-zx9-speaker/mobile/image-product.jpg",
+      "tablet": "./assets/product-zx9-speaker/tablet/image-product.jpg",
+      "desktop": "./assets/product-zx9-speaker/desktop/image-product.jpg"
     },
     "category": "speakers",
     "categoryImage": {
-      "mobile": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652950168/Audiophile/product-zx9-speaker/mobile/image-category-page-preview_ajod7p.jpg",
-      "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652950183/Audiophile/product-zx9-speaker/tablet/image-category-page-preview_ucsahi.jpg",
-      "desktop": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652950450/Audiophile/product-zx9-speaker/desktop/image-category-page-preview_o8yyza.jpg"
+      "mobile": "./assets/product-zx9-speaker/mobile/image-category-page-preview.jpg",
+      "tablet": "./assets/product-zx9-speaker/tablet/image-category-page-preview.jpg",
+      "desktop": "./assets/product-zx9-speaker/desktop/image-category-page-preview.jpg"
     },
     "new": true,
     "price": 4500,
@@ -474,19 +474,19 @@
     ],
     "gallery": {
       "first": {
-        "mobile": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652950170/Audiophile/product-zx9-speaker/mobile/image-gallery-1_saeqxg.jpg",
-        "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652950185/Audiophile/product-zx9-speaker/tablet/image-gallery-1_m5lhag.jpg",
-        "desktop": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652950450/Audiophile/product-zx9-speaker/desktop/image-gallery-1_oe1os3.jpg"
+        "mobile": "./assets/product-zx9-speaker/mobile/image-gallery-1.jpg",
+        "tablet": "./assets/product-zx9-speaker/tablet/image-gallery-1.jpg",
+        "desktop": "./assets/product-zx9-speaker/desktop/image-gallery-1.jpg"
       },
       "second": {
-        "mobile": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652950170/Audiophile/product-zx9-speaker/mobile/image-gallery-2_zkp7j3.jpg",
-        "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652950185/Audiophile/product-zx9-speaker/tablet/image-gallery-2_qiw7gn.jpg",
-        "desktop": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652950450/Audiophile/product-zx9-speaker/desktop/image-gallery-2_e6u3w6.jpg"
+        "mobile": "./assets/product-zx9-speaker/mobile/image-gallery-2.jpg",
+        "tablet": "./assets/product-zx9-speaker/tablet/image-gallery-2.jpg",
+        "desktop": "./assets/product-zx9-speaker/desktop/image-gallery-2.jpg"
       },
       "third": {
-        "mobile": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652950170/Audiophile/product-zx9-speaker/mobile/image-gallery-3_jgylyd.jpg",
-        "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652950184/Audiophile/product-zx9-speaker/tablet/image-gallery-3_da4gkr.jpg",
-        "desktop": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652950450/Audiophile/product-zx9-speaker/desktop/image-gallery-3_covebs.jpg"
+        "mobile": "./assets/product-zx9-speaker/mobile/image-gallery-3.jpg",
+        "tablet": "./assets/product-zx9-speaker/tablet/image-gallery-3.jpg",
+        "desktop": "./assets/product-zx9-speaker/desktop/image-gallery-3.jpg"
       }
     },
     "others": [

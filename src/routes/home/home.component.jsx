@@ -5,12 +5,12 @@ import CompanyFocus from "../../components/shared/company-focus/company-focus.co
 
 const Home = () => {
   return (
-    <>
+    <main>
       <Hero />
       <Directory />
       <ProductsFocus />
       <CompanyFocus />
-    </>
+    </main>
   );
 };
 

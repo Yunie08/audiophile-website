@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import colors from "./colors";
 import { device } from "./breakpoints";
 
-const titleStyle = css`
+export const titleStyle = css`
   font-weight: 700;
   text-transform: uppercase;
   color: ${colors.dark};
