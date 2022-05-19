@@ -8,7 +8,6 @@ import {
 
 const ProductFocusSplit = ({ product }) => {
   const { name, imageUrl, description, route } = product;
-  const { desktop, tablet, mobile } = imageUrl;
   return (
     <FocusContainer>
       <ImageContainer imageUrl={imageUrl} />

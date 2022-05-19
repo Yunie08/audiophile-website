@@ -1,10 +1,6 @@
 import ProductCta from "../../shared/product-cta/product-cta.component";
 
-import {
-  FocusContainer,
-  ImageContainer,
-  CtaContainer,
-} from "./product-focus-medium.styles";
+import { FocusContainer, CtaContainer } from "./product-focus-medium.styles";
 
 const ProductFocusMedium = ({ product }) => {
   const { name, imageUrl, description, route } = product;

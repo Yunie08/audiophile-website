@@ -13,6 +13,23 @@ export const NavContainer = styled.nav`
 
   @media ${device.tablet} {
     flex-wrap: wrap;
+    row-gap: ${(props) => props.parent !== "header" && "32px"};
+    margin-bottom: ${(props) => props.parent !== "header" && "32px"};
+  }
+  @media ${device.mobileL} {
+    justify-content: ${(props) => props.parent !== "header" && "center"};
+    row-gap: ${(props) => props.parent !== "header" && "48px"};
+    margin-bottom: ${(props) => props.parent !== "header" && "48px"};
+  }
+
+  a {
+    @media ${device.tablet} {
+      height: ${(props) => props.parent !== "header" && "25px"};
+
+      &:nth-child(1) {
+        height: ${(props) => props.parent !== "header" && "auto"};
+      }
+    }
   }
 `;
 

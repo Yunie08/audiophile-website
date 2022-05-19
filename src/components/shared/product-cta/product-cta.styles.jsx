@@ -30,6 +30,11 @@ export const BaseCta = styled.div`
     color: ${colors.dark};
     opacity: 0.5;
   }
+
+  @media ${device.tablet} {
+    align-items: center;
+    text-align: center;
+  }
 `;
 
 export const HeroCta = styled(BaseCta)`
@@ -52,22 +57,52 @@ export const HeroCta = styled(BaseCta)`
     font-size: 1.5rem;
     line-height: 2.5rem;
   }
+
+  @media ${device.tablet} {
+    max-width: 380px;
+  }
+  @media ${device.mobileL} {
+    max-width: 328px;
+  }
 `;
 
 export const MainCta = styled(BaseCta)`
   span {
     ${h1Style};
     color: ${colors.light};
+
+    @media ${device.tablet} {
+      margin: 0 0 24px 0;
+    }
+
+    @media ${device.mobileL} {
+      max-width: 250px;
+    }
   }
+
   p {
     color: ${colors.light};
     opacity: 0.75;
+
+    @media ${device.mobileL} {
+      margin: 0;
+    }
   }
 `;
 
 export const MinimalCta = styled(BaseCta)`
+  @media ${device.tablet} {
+    text-align: start;
+    align-items: flex-start;
+  }
+
   span {
     ${h4Style};
     margin: 0.7rem 0;
+  }
+  button {
+    @media ${device.tablet} {
+      margin-bottom: 0;
+    }
   }
 `;

@@ -1,6 +1,6 @@
 // TODO: Link see product button to product page
 
-import { LayoutContainer, Section } from "../../../utils/style/layout";
+import { LayoutContainer } from "../../../utils/style/layout";
 import { HeroSection, ImageContainer, TextContainer } from "./hero.styles";
 import ProductCta from "../../shared/product-cta/product-cta.component";
 

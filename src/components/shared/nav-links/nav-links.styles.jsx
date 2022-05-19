@@ -66,13 +66,11 @@ export const NavLinkContainer = styled.div`
     ${openingAnimationMobile}
     animation: ${(props) =>
       props.parent === "header" && "openingMobile 300ms ease-in-out"};
-
     a {
-      height: 25px;
+      height: ${(props) => props.parent === "header" && "30px"};
     }
-
     &:last-child {
-      margin-bottom: 28px;
+      margin-bottom: ${(props) => props.parent === "header" && "28px"};
     }
   }
 `;

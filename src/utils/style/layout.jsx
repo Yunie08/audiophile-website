@@ -1,9 +1,17 @@
 import styled, { css } from "styled-components";
 import { radiusCards } from "./variables";
+import { device } from "./breakpoints";
 
 export const LayoutContainer = styled.div`
   max-width: 1110px;
   width: 95%;
+
+  @media ${device.tablet} {
+    width: 89.7%;
+  }
+  @media ${device.mobileL} {
+    width: 87.2%;
+  }
 `;
 
 export const Section = styled.section`

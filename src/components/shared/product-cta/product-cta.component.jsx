@@ -29,7 +29,7 @@ const ProductCta = ({
   const CustomCta = getCta(ctaType);
   return (
     <CustomCta>
-      {!ctaType === "minimal" && isNew && <div>New product</div>}
+      {ctaType !== "minimal" && isNew && <div>New product</div>}
       <span>{name}</span>
       {ctaType !== "minimal" &&
         (ctaType === "hero" ? <h1>{description}</h1> : <p>{description}</p>)}
