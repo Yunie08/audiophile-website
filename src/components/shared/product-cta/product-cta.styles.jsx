@@ -100,6 +100,7 @@ export const MinimalCta = styled(BaseCta)`
     ${h4Style};
     margin: 0.7rem 0;
   }
+
   button {
     @media ${device.tablet} {
       margin-bottom: 0;

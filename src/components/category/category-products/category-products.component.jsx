@@ -7,18 +7,20 @@ import { ProductsContext } from "../../../utils/contexts/products.context";
 import { LayoutContainer } from "../../../utils/style/layout";
 import CategoryProductItem from "../category-products-item/category-products-item.component";
 
-import "./category-products.styles";
+import { CategoryProductsContainer } from "./category-products.styles";
 
 const CategoryProducts = ({ category }) => {
   const { products } = useContext(ProductsContext);
 
   return (
     <LayoutContainer as="section">
-      {products
-        .filter((product) => product.category === category)
-        .map((product) => (
-          <CategoryProductItem key={product.slug} product={product} />
-        ))}
+      <CategoryProductsContainer>
+        {products
+          .filter((product) => product.category === category)
+          .map((product) => (
+            <CategoryProductItem key={product.slug} product={product} />
+          ))}
+      </CategoryProductsContainer>
     </LayoutContainer>
   );
 };
