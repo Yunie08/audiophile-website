@@ -10,6 +10,10 @@ export const ProductContainer = styled.article`
   width: 100%;
   column-gap: 30px;
   overflow: hidden;
+
+  @media {device.tablet} {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const ImageContainer = styled.div``;
@@ -21,6 +25,5 @@ export const ProductImage = styled.img`
 
 export const CtaContainer = styled.div`
   display: flex;
-
   padding-left: 95px;
 `;

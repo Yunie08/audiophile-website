@@ -17,14 +17,14 @@ export const CategoryProductsContainer = styled.div`
 
   // Desktop : every second product is inverted
   article:nth-child(2n) {
-    //grid-auto-flow: dense;
+    grid-auto-flow: dense;
     direction: rtl;
     text-align: left;
 
     > div {
       padding: 0 95px 0 0;
 
-      button {
+      * {
         margin-right: auto;
       }
     }
