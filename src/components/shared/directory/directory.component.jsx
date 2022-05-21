@@ -24,12 +24,16 @@ const categories = [
   },
 ];
 
-const Directory = () => {
+const Directory = ({ parent }) => {
   return (
     <LayoutContainer as="section">
       <DirectoryContainer>
         {categories.map((category) => (
-          <DirectoryItem key={category.id} category={category} />
+          <DirectoryItem
+            key={category.id}
+            category={category}
+            parent={parent}
+          />
         ))}
       </DirectoryContainer>
     </LayoutContainer>

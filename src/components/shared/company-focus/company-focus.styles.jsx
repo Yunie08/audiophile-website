@@ -14,14 +14,14 @@ export const CompanyFocusContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 30px; // TODO: refactor
-  margin: 200px 0;
+  //margin: 200px 0;
 
   @media ${device.tablet} {
     height: auto;
     grid-template-columns: 1fr;
     grid-template-rows: 300px max-content;
     row-gap: 40px;
-    margin: 96px 0 81px 0;
+    //margin: 96px 0 81px 0;
 
     div:nth-child(2) {
       order: 1;
@@ -33,7 +33,7 @@ export const CompanyFocusContainer = styled.div`
 
   @media ${device.mobileM} {
     row-gap: 16.76px;
-    margin: 120px 0 105px 0;
+    //margin: 120px 0 105px 0;
   }
 `;
 

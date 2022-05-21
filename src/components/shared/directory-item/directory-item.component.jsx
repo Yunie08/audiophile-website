@@ -2,10 +2,10 @@ import Button from "../button/button.component";
 
 import { CategoryContainer, ImageContainer } from "./directory-item.styles";
 
-const DirectoryItem = ({ category }) => {
+const DirectoryItem = ({ category, parent }) => {
   const { title, imageUrl, route } = category;
   return (
-    <CategoryContainer>
+    <CategoryContainer parent={parent}>
       <ImageContainer>
         <img src={imageUrl} alt={title} />
       </ImageContainer>

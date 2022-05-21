@@ -3,14 +3,16 @@ import Directory from "../../components/shared/directory/directory.component";
 import ProductsFocus from "../../components/home/products-focus/products-focus.component";
 import CompanyFocus from "../../components/shared/company-focus/company-focus.component";
 
+import { MainHome } from "./home.styles";
+
 const Home = () => {
   return (
-    <main>
+    <MainHome>
       <Hero />
-      <Directory />
+      <Directory parent="home" />
       <ProductsFocus />
       <CompanyFocus />
-    </main>
+    </MainHome>
   );
 };
 
