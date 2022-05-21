@@ -21,7 +21,7 @@ const openingAnimationMobile = css`
       height: 0px;
     }
     100% {
-      height: 148px;
+      height: 168px;
     }
   }
 `;
@@ -43,35 +43,45 @@ export const NavLinkContainer = styled.div`
 
   @media ${device.tablet} {
     flex-basis: 100%;
-    justify-content: ${(props) => props.parent === "header" && "center"};
     row-gap: 16px;
-
-    ${openingAnimation}
-
-    animation: ${(props) =>
-      props.parent === "header" && "opening 300ms ease-in-out"};
-
-    a {
-      ${linkAnimation}
-      animation: ${(props) =>
-        props.parent === "header" && "appearingLink 300ms ease-in-out"};
-    }
   }
 
   @media ${device.mobileL} {
     flex-direction: column;
     align-items: center;
     row-gap: 16px !important;
+  }
+`;
 
-    ${openingAnimationMobile}
-    animation: ${(props) =>
-      props.parent === "header" && "openingMobile 300ms ease-in-out"};
+export const NavLinkContainerHeader = styled(NavLinkContainer)`
+  @media ${device.tablet} {
+    ${openingAnimation}
+    justify-content: center;
+    animation: opening 300ms ease-in-out;
+
     a {
-      height: ${(props) => props.parent === "header" && "30px"};
+      ${linkAnimation}
+      animation:appearingLink 300ms ease-in-out;
     }
+  }
+
+  @media ${device.mobileL} {
+    ${openingAnimationMobile}
+    animation: openingMobile 300ms ease-in-out;
+
+    a {
+      height: 30px;
+    }
+
     &:last-child {
-      margin-bottom: ${(props) => props.parent === "header" && "28px"};
+      margin-bottom: 28px;
     }
+  }
+`;
+
+export const NavLinkContainerFooter = styled(NavLinkContainer)`
+  a {
+    height: 25px;
   }
 `;
 
@@ -91,6 +101,6 @@ export const NavLink = styled(Link)`
   }
 
   @media ${device.mobileL} {
-    height: 8.9rem;
+    height: 3.5rem;
   }
 `;
