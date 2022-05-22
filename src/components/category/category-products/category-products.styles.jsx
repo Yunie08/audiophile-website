@@ -23,9 +23,21 @@ export const CategoryProductsContainer = styled.div`
 
     > div {
       padding: 0 95px 0 0;
-
       * {
         margin-right: auto;
+      }
+
+      @media ${device.tablet} {
+        align-items: center;
+        justify-content: center;
+        padding: 0 58px;
+
+        * {
+          margin-left: auto;
+        }
+      }
+      @media ${device.mobileL} {
+        padding: 0;
       }
     }
   }

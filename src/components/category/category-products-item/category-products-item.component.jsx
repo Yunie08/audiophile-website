@@ -10,9 +10,15 @@ import {
 
 const CategoryProductItem = ({ product }) => {
   console.log(product);
+  const { desktop, tablet, mobile } = product.categoryImage;
   return (
     <ProductContainer>
-      <ProductImage src={product.categoryImage.desktop} alt={product.name} />
+      <picture>
+        <source media="(max-width: 500px)" srcSet={mobile} />
+        <source media="(max-width: 990px)" srcSet={tablet} />
+        <source media="(min-width: 991px)" srcSet={desktop} />
+        <ProductImage src={tablet} alt={product.name} />
+      </picture>
       <CtaContainer>
         <ProductCta type="base" buttonType="base" product={product} />
       </CtaContainer>

@@ -8,19 +8,19 @@ const categories = [
     title: "headphones",
     imageUrl:
       "https://i.ibb.co/DzSD662/image-category-thumbnail-headphones.png",
-    route: "shop/headphones",
+    route: "/shop/headphones",
   },
   {
     id: 2,
     title: "speakers",
     imageUrl: "https://i.ibb.co/FsNFLGJ/image-category-thumbnail-speakers.png",
-    route: "shop/speakers",
+    route: "/shop/speakers",
   },
   {
     id: 3,
     title: "earphones",
     imageUrl: "https://i.ibb.co/3msHJX5/image-category-thumbnail-earphones.png",
-    route: "shop/earphones",
+    route: "/shop/earphones",
   },
 ];
 

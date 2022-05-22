@@ -59,6 +59,9 @@ export const FooterLayoutContainer = styled(LayoutContainer)`
     text-align: center;
     padding: 52px 0 38px 0;
     row-gap: 48px;
+    svg:first-child {
+      margin: 0 auto;
+    }
     div:nth-child(2) {
       justify-self: center;
     }

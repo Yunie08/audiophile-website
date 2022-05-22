@@ -45,6 +45,9 @@ export const NavContainer = styled(LayoutContainer)`
 
   // Logo
   a:nth-child(2) {
+    @media ${device.mobileL} {
+      margin: 0 auto;
+    }
   }
 
   // Main nav
