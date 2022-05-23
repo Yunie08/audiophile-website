@@ -17,7 +17,6 @@ export const BaseCta = styled.div`
 
   div {
     ${overlineStyle};
-    color: ${colors.primary};
     margin: 0;
   }
 

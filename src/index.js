@@ -5,12 +5,15 @@ import App from "./App";
 
 // Context providers
 import { ProductsProvider } from "./utils/contexts/products.context";
+import { CurrentProductProvider } from "./utils/contexts/currentProduct.context";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <ProductsProvider>
-      <App />
+      <CurrentProductProvider>
+        <App />
+      </CurrentProductProvider>
     </ProductsProvider>
   </React.StrictMode>
 );

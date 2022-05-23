@@ -39,6 +39,11 @@ export const FooterLayoutContainer = styled(LayoutContainer)`
     background-color: ${colors.primary};
     top: 0;
     left: 0;
+
+    @media ${device.mobileL} {
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
   @media ${device.tablet} {

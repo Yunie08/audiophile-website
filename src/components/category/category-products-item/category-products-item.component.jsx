@@ -20,7 +20,7 @@ const CategoryProductItem = ({ product }) => {
         <ProductImage src={tablet} alt={product.name} />
       </picture>
       <CtaContainer>
-        <ProductCta type="base" buttonType="base" product={product} />
+        <ProductCta ctaType="base" buttonType="base" product={product} />
       </CtaContainer>
     </ProductContainer>
   );

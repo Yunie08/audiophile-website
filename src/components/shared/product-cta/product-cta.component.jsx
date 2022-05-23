@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 import Button from "../button/button.component";
 
 import { BaseCta, HeroCta, MinimalCta, MainCta } from "./product-cta.styles";
@@ -22,19 +24,25 @@ const getCta = (ctaType = CTA_TYPES_CLASSES.base) =>
   }[ctaType]);
 
 const ProductCta = ({
-  product: { isNew, name, description, route },
+  product: { isNew, name, description, route, slug },
   ctaType,
   buttonType,
 }) => {
+  const navigate = useNavigate();
   const CustomCta = getCta(ctaType);
+  const onNavigateHandler = () => navigate(slug);
+
   return (
     <CustomCta>
       {ctaType !== "minimal" && isNew && <div>New product</div>}
       <span>{name}</span>
       {ctaType !== "minimal" &&
         (ctaType === "hero" ? <h1>{description}</h1> : <p>{description}</p>)}
-
-      <Button buttonType={buttonType}>See product</Button>
+      {buttonType && (
+        <Button buttonType={buttonType} onClick={onNavigateHandler}>
+          See product
+        </Button>
+      )}
     </CustomCta>
   );
 };
