@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 import { device } from "../../../utils/style/breakpoints";
+import { radiusCards } from "../../../utils/style/variables";
 
 const rowGaps = {
   desktop: "32px",
@@ -16,8 +17,8 @@ export const GalleryLayout = styled.div`
   width: 100%;
   display: grid;
   grid-auto-flow: column;
-  grid-template-columns: 40.1% 57.2%;
-  grid-template-rows: repeat(2, minmax(mincontent, 280px));
+  grid-template-columns: ${`calc(40% - ${columnGaps.desktop} / 2), calc(60% - ${columnGaps.desktop} / 2)`};
+  grid-template-rows: ${`repeat(2, calc(50% - ${rowGaps.desktop} / 2))`};
   column-gap: ${columnGaps.desktop};
   row-gap: ${rowGaps.desktop};
   overflow: hidden;
@@ -27,7 +28,7 @@ export const GalleryLayout = styled.div`
   @media ${device.tablet} {
     column-gap: ${columnGaps.tablet};
     row-gap: ${rowGaps.tablet};
-    grid-template-rows: repeat(2, minmax(mincontent, 174px));
+    grid-template-rows: ${`repeat(2, calc(50% - (${rowGaps.tablet}) / 2))`};
     min-height: 368px;
   }
   @media ${device.mobileM} {
@@ -40,6 +41,7 @@ export const GalleryLayout = styled.div`
     object-fit: cover;
     width: 100%;
     height: 100%;
+    border-radius: ${radiusCards};
   }
 
   picture:nth-child(3) {
