@@ -5,7 +5,7 @@ import { h6Style } from "../../../utils/style/typography";
 import { radiusCards } from "../../../utils/style/variables";
 import { device } from "../../../utils/style/breakpoints";
 
-const marginAdjust = {
+export const marginAdjust = {
   desktop: {
     home: "0 0 -32px 0",
     other: "80px 0 0 0",
@@ -27,6 +27,7 @@ export const CategoryContainer = styled.div`
   justify-content: center;
   background-color: ${colors.tertiary};
   border-radius: ${radiusCards};
+
   margin: ${(props) =>
     props.parent === "home"
       ? marginAdjust.desktop.home
@@ -34,19 +35,21 @@ export const CategoryContainer = styled.div`
 
   @media ${device.tablet} {
     height: 165px;
-    margin: ${(props) =>
+    margin: ${marginAdjust.tablet.home};
+    /* margin: ${(props) =>
       props.parent === "home"
         ? marginAdjust.tablet.home
-        : marginAdjust.tablet.other};
+        : marginAdjust.tablet.other}; */
   }
 
   @media ${device.mobileL} {
     max-width: 420px;
     width: 100%;
-    margin: ${(props) =>
+    margin: ${marginAdjust.mobile.home};
+    /* margin: ${(props) =>
       props.parent === "home"
         ? marginAdjust.mobile.home
-        : marginAdjust.mobile.other};
+        : marginAdjust.mobile.other}; */
   }
 
   h2 {
