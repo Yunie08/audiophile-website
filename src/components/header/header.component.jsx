@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import useMediaQuery from "../../utils/hooks/media-query.hooks";
 
 import { StyledHeader, NavContainer } from "./header.styles";
@@ -14,9 +14,24 @@ import { NavLink } from "../../components/shared/nav-links/nav-links.styles";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const desktopDisplay = useMediaQuery("(min-width: 991px)");
-  // const isMobile = useMediaQuery("(max-width: 768px)");
+  const ref = useRef();
+
+  useEffect(() => {
+    const checkIfClickedOutside = (e) => {
+      if (isOpen && ref.current && !ref.current.contains(e.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", checkIfClickedOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", checkIfClickedOutside);
+    };
+  }, [isOpen]);
+
   return (
-    <StyledHeader>
+    <StyledHeader ref={ref}>
       <NavContainer parent="header" as="nav">
         <BurgerToggle isOpen={isOpen} setIsOpen={setIsOpen} />
 
