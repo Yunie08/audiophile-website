@@ -15,7 +15,6 @@ const ProductDetails = () => {
   const {
     currentProduct: { features },
   } = useContext(CurrentProductContext);
-  console.log(features);
   return (
     <DetailsContainer>
       <FeaturesContainer>

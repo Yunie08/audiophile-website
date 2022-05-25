@@ -27,6 +27,12 @@ export const GoBackButton = styled.button`
     opacity: 1;
   }
 
+  &:focus {
+    outline: auto;
+    outline-color: ${colors.dark};
+    outline-offset: 2px;
+  }
+
   @media ${device.tablet} {
     margin: 23px 0 14px 0;
     padding: 10px 0;

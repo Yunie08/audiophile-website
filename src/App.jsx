@@ -8,16 +8,14 @@ import Shop from "./routes/shop/shop.component";
 
 const App = () => {
   return (
-    <Router>
-      <ScrollToTop>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path="shop/*" element={<Shop />} />
-          </Route>
-        </Routes>
-      </ScrollToTop>
-    </Router>
+    <ScrollToTop>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="shop/*" element={<Shop />} />
+        </Route>
+      </Routes>
+    </ScrollToTop>
   );
 };
 

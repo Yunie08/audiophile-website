@@ -1,6 +1,9 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 
+// Contexts
+import { CartContext } from "../../../utils/contexts/cart.context";
 import { CurrentProductContext } from "../../../utils/contexts/currentProduct.context";
+
 import QuantitySelector from "../../shared/quantity-selector/quantity-selector.component";
 import Button from "../../shared/button/button.component";
 import {
@@ -10,10 +13,17 @@ import {
 } from "./product-overview-text.styles";
 
 const ProductOverviewText = () => {
-  const {
-    currentProduct: { isNew, name, description, price },
-  } = useContext(CurrentProductContext);
+  const { currentProduct } = useContext(CurrentProductContext);
+  const { isNew, name, description, price } = currentProduct;
   // TODO: Update cart on button click
+  const { addItemToCart } = useContext(CartContext);
+  const [quantityToAdd, setQuantityToAdd] = useState(1);
+
+  const addToCartHandler = () => {
+    addItemToCart(currentProduct, quantityToAdd);
+    setQuantityToAdd(1);
+  };
+
   return (
     <OverviewTextContainer>
       {isNew && <NewProduct>new product</NewProduct>}
@@ -21,8 +31,11 @@ const ProductOverviewText = () => {
       <p>{description}</p>
       <span>{`$ ${price}`}</span>
       <QuantityContainer>
-        <QuantitySelector />
-        <Button>Add to cart</Button>
+        <QuantitySelector
+          quantityToAdd={quantityToAdd}
+          setQuantityToAdd={setQuantityToAdd}
+        />
+        <Button onClick={addToCartHandler}>Add to cart</Button>
       </QuantityContainer>
     </OverviewTextContainer>
   );

@@ -29,7 +29,7 @@ const Product = () => {
   const goBackHandler = () => navigate(-1);
 
   return (
-    <MainProductPage>
+    <MainProductPage className="main">
       <LayoutContainer>
         <GoBackButton onClick={goBackHandler}>go back</GoBackButton>
         {!isLoading && <ProductPresentation />}

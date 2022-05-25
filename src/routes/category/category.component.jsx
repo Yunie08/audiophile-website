@@ -13,7 +13,7 @@ const Category = () => {
   const { category } = useParams();
 
   return (
-    <Main>
+    <Main className="main">
       <CategoryHeader category={category} />
       <CategoryProducts category={category} />
       <Directory />

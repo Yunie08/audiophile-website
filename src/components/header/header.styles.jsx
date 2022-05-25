@@ -13,7 +13,7 @@ export const StyledHeader = styled.header`
   display: flex;
   justify-content: center;
   position: fixed;
-  z-index: 100;
+  z-index: 1;
   /* height: ${headerHeight.desktop};
 
   @media ${device.tablet} {
@@ -64,6 +64,25 @@ export const NavContainer = styled(LayoutContainer)`
       order: 4;
       grid-column: 1 / span 3;
       margin-bottom: 30px;
+    }
+  }
+
+  button:last-child {
+    background: none;
+    border: none;
+    color: ${colors.light};
+    cursor: pointer;
+
+    &:hover {
+      color: ${colors.primary};
+    }
+
+    &:active,
+    &:focus,
+    &:target {
+      background: none;
+      border: none;
+      color: ${colors.light};
     }
   }
 

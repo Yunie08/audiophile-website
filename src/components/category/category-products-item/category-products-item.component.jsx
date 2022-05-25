@@ -9,7 +9,6 @@ import {
 } from "./category-products-item.styles";
 
 const CategoryProductItem = ({ product }) => {
-  console.log(product);
   const { desktop, tablet, mobile } = product.categoryImage;
   return (
     <ProductContainer>

@@ -7,7 +7,7 @@ import { MainHome } from "./home.styles";
 
 const Home = () => {
   return (
-    <MainHome>
+    <MainHome className="main">
       <Hero />
       <Directory parent="home" />
       <ProductsFocus />

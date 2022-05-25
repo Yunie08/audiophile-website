@@ -57,6 +57,7 @@
         "desktop": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652948502/Audiophile/product-yx1-earphones/desktop/image-gallery-3_naagvr.jpg"
       }
     },
+    "thumbnail": "https://res.cloudinary.com/cloud-rfp/image/upload/v1653442752/Audiophile/cart/image-yx1-earphones_g7yi6r.jpg",
     "others": [
       {
         "slug": "xx99-mark-one-headphones",
@@ -105,6 +106,7 @@
       "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652948005/Audiophile/product-xx59-headphones/tablet/image-category-page-preview_qef2h4.jpg",
       "desktop": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652947909/Audiophile/product-xx59-headphones/desktop/image-category-page-preview_q7qzdp.jpg"
     },
+    "thumbnail": "https://res.cloudinary.com/cloud-rfp/image/upload/v1653442751/Audiophile/cart/image-xx59-headphones_bikngt.jpg",
     "isNew": false,
     "price": 899,
     "description": "Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move.",
@@ -192,6 +194,7 @@
       "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949140/Audiophile/product-xx99-mark-one-headphones/tablet/image-category-page-preview_oyahtc.jpg",
       "desktop": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949095/Audiophile/product-xx99-mark-one-headphones/desktop/image-category-page-preview_gr2ysc.jpg"
     },
+    "thumbnail": "https://res.cloudinary.com/cloud-rfp/image/upload/v1653442751/Audiophile/cart/image-xx99-mark-one-headphones_kauzlc.jpg",
     "isNew": false,
     "price": 1750,
     "description": "As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.",
@@ -279,6 +282,7 @@
       "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949398/Audiophile/product-xx99-mark-two-headphones/tablet/image-category-page-preview_gbgrzq.jpg",
       "desktop": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949359/Audiophile/product-xx99-mark-two-headphones/desktop/image-category-page-preview_lldywx.jpg"
     },
+    "thumbnail": "https://res.cloudinary.com/cloud-rfp/image/upload/v1653442751/Audiophile/cart/image-xx99-mark-two-headphones_g5be8v.jpg",
     "isNew": true,
     "price": 2999,
     "description": "The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.",
@@ -370,6 +374,7 @@
       "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949791/Audiophile/product-zx7-speaker/tablet/image-category-page-preview_coexdg.jpg",
       "desktop": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949774/Audiophile/product-zx7-speaker/desktop/image-category-page-preview_aahb97.jpg"
     },
+    "thumbnail": "https://res.cloudinary.com/cloud-rfp/image/upload/v1653442752/Audiophile/cart/image-zx7-speaker_hblgo8.jpg",
     "isNew": false,
     "price": 3500,
     "description": "Stream high quality sound wirelessly with minimal to no loss. The ZX7 speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use.",
@@ -461,6 +466,7 @@
       "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652950183/Audiophile/product-zx9-speaker/tablet/image-category-page-preview_ucsahi.jpg",
       "desktop": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652950450/Audiophile/product-zx9-speaker/desktop/image-category-page-preview_o8yyza.jpg"
     },
+    "thumbnail": "https://res.cloudinary.com/cloud-rfp/image/upload/v1653442752/Audiophile/cart/image-zx9-speaker_bpt5e4.jpg",
     "isNew": true,
     "price": 4500,
     "description": "Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups.",

@@ -17,7 +17,7 @@ export const BaseButton = styled.button`
   border: 1px solid ${colors.primary};
   cursor: pointer;
   position: relative;
-  z-index: 1;
+  z-index: 0;
 
   &::after {
     content: "";

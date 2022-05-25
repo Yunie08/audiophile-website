@@ -10,7 +10,6 @@ const AccessoryList = () => {
   const {
     currentProduct: { includes },
   } = useContext(CurrentProductContext);
-  console.log(includes);
   return (
     <ItemList>
       {includes.map((accessory) => (

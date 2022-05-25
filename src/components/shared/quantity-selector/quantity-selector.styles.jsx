@@ -10,13 +10,18 @@ export const HiddenLabel = styled.label`
 
 export const InputContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  height: 48px;
-  width: 120px !important;
+  grid-template-columns: repeat(3, 33.33%);
+  height: ${(props) => (props.type === "cart" ? "32px" : "48px")};
+  width: 120px;
+  max-width: 100%;
 
   > * {
     border: none;
     background-color: ${colors.tertiary};
+
+    &:focus {
+      outline-offset: -1px;
+    }
   }
 `;
 export const ValueButton = styled.input`
