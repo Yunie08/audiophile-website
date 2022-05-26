@@ -1,18 +1,26 @@
 import React, { useContext } from "react";
 
 import { CartContext } from "../../../utils/contexts/cart.context";
-
-import CartItemsListItem from "../cart-items-list-item/cart-items-list-item.component";
-
-const CartItemsList = () => {
-  const { cartItems } = useContext(CartContext);
+import QuantitySelector from "../../shared/quantity-selector/quantity-selector.component";
+import { ProductList, Product, ProductName } from "./cart-items-list.styles";
+const CartItemsList = ({ cartItems }) => {
   return (
-    <CartItemsList>
-      {/* {cartItems?.map((item) => (
-        <CartItemsListItem key={item.slug} item={item} />
-      ))} */}
-      <div>Tests</div>
-    </CartItemsList>
+    cartItems && (
+      <ProductList>
+        {cartItems.map((item) => (
+          <Product>
+            <img alt={item.name} src={item.thumbnail} />
+            <ProductName>{item.shortName}</ProductName>
+            <div>{`$ ${item.price}`}</div>
+            <QuantitySelector
+              quantityToAdd={item.quantity}
+              item={item}
+              type="cart"
+            />
+          </Product>
+        ))}
+      </ProductList>
+    )
   );
 };
 

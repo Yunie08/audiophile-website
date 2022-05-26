@@ -39,38 +39,27 @@ const CartModalContent = React.forwardRef((props, ref) => {
     toggleIsCartOpen();
   };
 
-  const shortenName = (name, category) => {
-    const indexToSplit = name
-      .toUpperCase()
-      .indexOf(category.toUpperCase().slice(0, -1));
-    if (indexToSplit !== -1) {
-      return name.slice(0, indexToSplit).trim();
-    }
-  };
+  // const shortenName = (name, category) => {
+  //   const indexToSplit = name
+  //     .toUpperCase()
+  //     .indexOf(category.toUpperCase().slice(0, -1));
+  //   if (indexToSplit !== -1) {
+  //     return name.slice(0, indexToSplit).trim();
+  //   }
+  // };
   return (
-    <CartContentContainer ref={ref}>
-      <CartCount>{`cart (${cartCount})`}</CartCount>
-      <ClearButton onClick={onDeleteHandler}>Remove all</ClearButton>
-      <ProductList>
-        {cartItems.map((item) => (
-          <Product key={item.slug}>
-            <img src={item.thumbnail} alt={item.name} />
-            <ProductName>{shortenName(item.name, item.category)}</ProductName>
-            <div>{`$ ${item.price}`}</div>
-            <QuantitySelector
-              quantityToAdd={item.quantity}
-              item={item}
-              type="cart"
-            />
-          </Product>
-        ))}
-      </ProductList>
-      <Total>total</Total>
-      <TotalPrice>{`$ ${cartTotalPrice.toLocaleString("en-US")}`}</TotalPrice>
-      <Button type="base" onClick={onGotoCheckoutHandler}>
-        Checkout
-      </Button>
-    </CartContentContainer>
+    cartItems && (
+      <CartContentContainer ref={ref}>
+        <CartCount>{`cart (${cartCount})`}</CartCount>
+        <ClearButton onClick={onDeleteHandler}>Remove all</ClearButton>
+        <CartItemsList cartItems={cartItems} />
+        <Total>total</Total>
+        <TotalPrice>{`$ ${cartTotalPrice.toLocaleString("en-US")}`}</TotalPrice>
+        <Button type="base" onClick={onGotoCheckoutHandler}>
+          Checkout
+        </Button>
+      </CartContentContainer>
+    )
   );
 });
 
