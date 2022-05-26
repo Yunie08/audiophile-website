@@ -1,4 +1,5 @@
-import { useContext } from "react";
+import React, { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 
 import { CartContext } from "../../../utils/contexts/cart.context";
 
@@ -18,7 +19,7 @@ import {
   TotalPrice,
 } from "./cart-modal-content.styles";
 
-const CartModalContent = () => {
+const CartModalContent = React.forwardRef((props, ref) => {
   const {
     isCartOpen,
     toggleIsCartOpen,
@@ -30,9 +31,13 @@ const CartModalContent = () => {
     removeItemFromCart,
   } = useContext(CartContext);
 
+  const navigate = useNavigate();
+
   const onDeleteHandler = () => clearCart();
-  const onChangeQuantityHandler = (productToAdd, quantity) =>
-    addItemToCart(productToAdd, quantity);
+  const onGotoCheckoutHandler = () => {
+    navigate("/checkout");
+    toggleIsCartOpen();
+  };
 
   const shortenName = (name, category) => {
     const indexToSplit = name
@@ -43,7 +48,7 @@ const CartModalContent = () => {
     }
   };
   return (
-    <CartContentContainer>
+    <CartContentContainer ref={ref}>
       <CartCount>{`cart (${cartCount})`}</CartCount>
       <ClearButton onClick={onDeleteHandler}>Remove all</ClearButton>
       <ProductList>
@@ -62,9 +67,11 @@ const CartModalContent = () => {
       </ProductList>
       <Total>total</Total>
       <TotalPrice>{`$ ${cartTotalPrice.toLocaleString("en-US")}`}</TotalPrice>
-      <Button type="base">Checkout</Button>
+      <Button type="base" onClick={onGotoCheckoutHandler}>
+        Checkout
+      </Button>
     </CartContentContainer>
   );
-};
+});
 
 export default CartModalContent;

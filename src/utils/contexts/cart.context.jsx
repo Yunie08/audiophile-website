@@ -1,4 +1,5 @@
 import { createContext, useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 // Add one or more items of a product
 const addCartItem = (cartItems, productToAdd, quantityToAdd) => {
@@ -74,10 +75,15 @@ export const CartContext = createContext({
 });
 
 export const CartProvider = ({ children }) => {
+  const { pathname } = useLocation();
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [cartItems, setCartItems] = useState([]);
   const [cartCount, setCartCount] = useState(0);
   const [cartTotalPrice, setCartTotalPrice] = useState(0);
+
+  // useEffect(() => {
+  //   setIsCartOpen(false);
+  // }, [pathname]);
 
   useEffect(() => {
     const newCartCount = cartItems.reduce(

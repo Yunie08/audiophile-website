@@ -1,7 +1,7 @@
 import React from "react";
 
 // Return true when media query matches window size
-function useMediaQuery(query) {
+const useMediaQuery = (query) => {
   const [matches, setMatches] = React.useState(
     window.matchMedia(query).matches
   );
@@ -18,6 +18,6 @@ function useMediaQuery(query) {
     };
   }, [query]);
   return matches;
-}
+};
 
 export default useMediaQuery;

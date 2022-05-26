@@ -5,7 +5,8 @@ import { ProductsContext } from "../../utils/contexts/products.context";
 import { CurrentProductContext } from "../../utils/contexts/currentProduct.context";
 
 import { LayoutContainer } from "../../utils/style/layout";
-import { MainProductPage, GoBackButton } from "./product.styles";
+import { MainProductPage } from "./product.styles";
+import GoBackButton from "../../components/shared/go-back-button/go-back-button.component";
 import ProductPresentation from "../../components/product/product-presentation/product-presentation.component";
 import Directory from "../../components/shared/directory/directory.component";
 import CompanyFocus from "../../components/shared/company-focus/company-focus.component";
@@ -26,12 +27,10 @@ const Product = () => {
     setIsLoading(false);
   }, [product]);
 
-  const goBackHandler = () => navigate(-1);
-
   return (
     <MainProductPage className="main">
       <LayoutContainer>
-        <GoBackButton onClick={goBackHandler}>go back</GoBackButton>
+        <GoBackButton />
         {!isLoading && <ProductPresentation />}
       </LayoutContainer>
       <Directory />

@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect, useContext } from "react";
 import useMediaQuery from "../../utils/hooks/media-query.hooks";
+import useClickOutside from "../../utils/hooks/use-click-location.hooks";
 
 import { CartContext } from "../../utils/contexts/cart.context";
 
@@ -18,21 +19,12 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const desktopDisplay = useMediaQuery("(min-width: 991px)");
   const ref = useRef();
+  const isClickedOutside = useClickOutside(isOpen, ref);
 
-  // Close drowpdown menu on click outside of header
+  // // Close drowpdown menu on click outside of header
   useEffect(() => {
-    const checkIfClickedOutside = (e) => {
-      if (isOpen && ref.current && !ref.current.contains(e.target)) {
-        setIsOpen(false);
-      }
-    };
-
-    document.addEventListener("mousedown", checkIfClickedOutside);
-
-    return () => {
-      document.removeEventListener("mousedown", checkIfClickedOutside);
-    };
-  }, [isOpen]);
+    isClickedOutside && setIsOpen(false);
+  }, [isClickedOutside, isOpen]);
 
   return (
     <StyledHeader ref={ref}>
@@ -44,7 +36,7 @@ const Header = () => {
         </NavLink>
 
         {(isOpen || desktopDisplay) && <NavLinks parent="header" />}
-        <NavLink to={{}} onClick={toggleIsCartOpen}>
+        <NavLink onClick={toggleIsCartOpen} to={{}}>
           <CartIcon />
         </NavLink>
         {isCartOpen && <CartModal />}

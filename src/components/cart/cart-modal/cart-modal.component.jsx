@@ -1,5 +1,6 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import ReactModal from "react-modal";
+import useClickOutside from "../../../utils/hooks/use-click-location.hooks";
 
 import { CartContext } from "../../../utils/contexts/cart.context";
 import { LayoutContainer } from "../../../utils/style/layout";
@@ -13,7 +14,15 @@ ReactModal.setAppElement(mainElt);
 // ReactModal.setAppElement(mainElt);
 
 const CartModal = () => {
-  const { isCartOpen, toggleIsCartOpen } = useContext(CartContext);
+  const { isCartOpen, toggleIsCartOpen, setIsCartOpen } =
+    useContext(CartContext);
+  const ref = React.createRef();
+  const isClickedOutside = useClickOutside(isCartOpen, ref);
+  // // Close drowpdown menu on click outside of header
+  useEffect(() => {
+    isClickedOutside && setIsCartOpen(false);
+  }, [isClickedOutside, isCartOpen]);
+
   return (
     <LayoutContainer>
       <ReactModal
@@ -24,7 +33,7 @@ const CartModal = () => {
         onRequestClose={toggleIsCartOpen}
         shouldCloseOnOverlayClick={true}
       >
-        <CartModalContent />
+        <CartModalContent ref={ref} />
       </ReactModal>
     </LayoutContainer>
   );
