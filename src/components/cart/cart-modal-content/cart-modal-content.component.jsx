@@ -3,8 +3,6 @@ import { useNavigate } from "react-router-dom";
 
 import { CartContext } from "../../../utils/contexts/cart.context";
 
-import CartItemsList from "../cart-items-list/cart-items-list.component";
-import "./cart-modal-content.styles";
 import QuantitySelector from "../../shared/quantity-selector/quantity-selector.component";
 import Button from "../../shared/button/button.component";
 
@@ -20,16 +18,8 @@ import {
 } from "./cart-modal-content.styles";
 
 const CartModalContent = React.forwardRef((props, ref) => {
-  const {
-    isCartOpen,
-    toggleIsCartOpen,
-    addItemToCart,
-    cartItems,
-    cartTotalPrice,
-    cartCount,
-    clearCart,
-    removeItemFromCart,
-  } = useContext(CartContext);
+  const { toggleIsCartOpen, cartItems, cartTotalPrice, cartCount, clearCart } =
+    useContext(CartContext);
 
   const navigate = useNavigate();
 
@@ -39,14 +29,6 @@ const CartModalContent = React.forwardRef((props, ref) => {
     toggleIsCartOpen();
   };
 
-  const shortenName = (name, category) => {
-    const indexToSplit = name
-      .toUpperCase()
-      .indexOf(category.toUpperCase().slice(0, -1));
-    if (indexToSplit !== -1) {
-      return name.slice(0, indexToSplit).trim();
-    }
-  };
   return (
     <CartContentContainer ref={ref}>
       <CartCount>{`cart (${cartCount})`}</CartCount>
@@ -55,7 +37,7 @@ const CartModalContent = React.forwardRef((props, ref) => {
         {cartItems.map((item) => (
           <Product key={item.slug}>
             <img src={item.thumbnail} alt={item.name} />
-            <ProductName>{shortenName(item.name, item.category)}</ProductName>
+            <ProductName>{item.shortName}</ProductName>
             <div>{`$ ${item.price}`}</div>
             <QuantitySelector
               quantityToAdd={item.quantity}

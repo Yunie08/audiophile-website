@@ -3,6 +3,7 @@
     "id": 1,
     "slug": "yx1-earphones",
     "name": "YX1 Wireless Earphones",
+    "shortName": "YX1",
     "image": {
       "mobile": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652948515/Audiophile/product-yx1-earphones/mobile/image-product_aige7l.jpg",
       "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652948530/Audiophile/product-yx1-earphones/tablet/image-product_ucjsp7.jpg",
@@ -95,6 +96,7 @@
     "id": 2,
     "slug": "xx59-headphones",
     "name": "XX59 Headphones",
+    "shortName": "XX59",
     "image": {
       "mobile": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652948026/Audiophile/product-xx59-headphones/mobile/image-product_c5b7ip.jpg",
       "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652948005/Audiophile/product-xx59-headphones/tablet/image-product_kernsf.jpg",
@@ -183,6 +185,7 @@
     "id": 3,
     "slug": "xx99-mark-one-headphones",
     "name": "XX99 Mark I Headphones",
+    "shortName": "XX99 MK I",
     "image": {
       "mobile": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949113/Audiophile/product-xx99-mark-one-headphones/mobile/image-product_rpfkco.jpg",
       "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949140/Audiophile/product-xx99-mark-one-headphones/tablet/image-product_g8rtcq.jpg",
@@ -271,6 +274,7 @@
     "id": 4,
     "slug": "xx99-mark-two-headphones",
     "name": "XX99 Mark II Headphones",
+    "shortName": "XX99 MK II",
     "image": {
       "mobile": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949375/Audiophile/product-xx99-mark-two-headphones/mobile/image-product_ipe0a9.jpg",
       "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949399/Audiophile/product-xx99-mark-two-headphones/tablet/image-product_vrld0q.jpg",
@@ -363,6 +367,7 @@
     "id": 5,
     "slug": "zx7-speaker",
     "name": "ZX7 Speaker",
+    "shortName": "ZX7",
     "image": {
       "mobile": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949810/Audiophile/product-zx7-speaker/mobile/image-product_iomtka.jpg",
       "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652949792/Audiophile/product-zx7-speaker/tablet/image-product_wm1pec.jpg",
@@ -455,6 +460,7 @@
     "id": 6,
     "slug": "zx9-speaker",
     "name": "ZX9 Speaker",
+    "shortName": "ZX9",
     "image": {
       "mobile": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652950168/Audiophile/product-zx9-speaker/mobile/image-product_lgf0ds.jpg",
       "tablet": "https://res.cloudinary.com/cloud-rfp/image/upload/v1652950184/Audiophile/product-zx9-speaker/tablet/image-product_htcdqa.jpg",
