@@ -13,6 +13,7 @@ import {
   CartCount,
   ProductList,
   Product,
+  ProductName,
   Total,
   TotalPrice,
 } from "./cart-modal-content.styles";
@@ -49,7 +50,7 @@ const CartModalContent = () => {
         {cartItems.map((item) => (
           <Product key={item.slug}>
             <img src={item.thumbnail} alt={item.name} />
-            <div>{shortenName(item.name, item.category)}</div>
+            <ProductName>{shortenName(item.name, item.category)}</ProductName>
             <div>{`$ ${item.price}`}</div>
             <QuantitySelector
               quantityToAdd={item.quantity}

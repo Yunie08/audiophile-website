@@ -8,7 +8,7 @@ import {
   QuantityInput,
 } from "./quantity-selector.styles";
 
-const QuantitySelector = ({ quantityToAdd, setQuantityToAdd, item }) => {
+const QuantitySelector = ({ quantityToAdd, setQuantityToAdd, item, type }) => {
   const { addItemToCart, removeItemFromCart, setCartItemQuantity } =
     useContext(CartContext);
 
@@ -32,7 +32,7 @@ const QuantitySelector = ({ quantityToAdd, setQuantityToAdd, item }) => {
   return (
     <>
       <HiddenLabel htmlFor="quantity">Quantity</HiddenLabel>
-      <InputContainer>
+      <InputContainer type={type}>
         <ValueButton type="button" value="-" onClick={decrementQuantity} />
         <QuantityInput
           type="number"

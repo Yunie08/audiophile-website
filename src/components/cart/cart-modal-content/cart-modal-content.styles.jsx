@@ -12,8 +12,8 @@ export const CartContentContainer = styled.div`
   height: 100%;
 
   button {
-    margin: 0;
     &:last-child {
+      margin: 0;
       grid-column: 1 / span 2;
     }
   }
@@ -62,6 +62,7 @@ export const Product = styled.div`
   row-gap: 0px;
   column-gap: 16px;
   grid-auto-flow: column;
+  //align-items: center;
 
   img {
     width: 100%;
@@ -76,6 +77,15 @@ export const Product = styled.div`
   div:first-child {
     grid-column: 2;
   }
+  div:last-child {
+    grid-row: 1 / 3;
+    align-self: center;
+  }
+`;
+
+export const ProductName = styled.div`
+  font-weight: 700;
+  color: ${colors.dark};
 `;
 
 export const Total = styled.span`
