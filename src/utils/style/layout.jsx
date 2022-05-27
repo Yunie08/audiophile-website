@@ -5,6 +5,8 @@ import { device } from "./breakpoints";
 export const LayoutContainer = styled.div`
   max-width: 1110px;
   width: 95%;
+  display: flex;
+  flex-direction: column;
 
   @media ${device.tablet} {
     width: 89.7%;

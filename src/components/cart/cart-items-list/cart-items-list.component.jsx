@@ -1,18 +1,39 @@
-import React, { useContext } from "react";
+import React from "react";
 
-import { CartContext } from "../../../utils/contexts/cart.context";
+import QuantitySelector from "../../shared/quantity-selector/quantity-selector.component";
+import QuantityDisplay from "../quantity-display/quantity-display.component";
 
-import CartItemsListItem from "../cart-items-list-item/cart-items-list-item.component";
+import { ProductList, Product, ProductName } from "./cart-items-list.styles";
 
-const CartItemsList = () => {
-  const { cartItems } = useContext(CartContext);
+const ITEM_TYPES_CLASSES = {
+  cart: "cart",
+  checkout: "checkout",
+};
+
+const CartItemsList = ({ cartItems, type }) => {
+  const getCustomComponent = (type = ITEM_TYPES_CLASSES.cart) =>
+    ({
+      [ITEM_TYPES_CLASSES.cart]: QuantitySelector,
+      [ITEM_TYPES_CLASSES.checkout]: QuantityDisplay,
+    }[type]);
+
+  const CustomComponent = getCustomComponent(type);
+
   return (
-    <CartItemsList>
-      {/* {cartItems?.map((item) => (
-        <CartItemsListItem key={item.slug} item={item} />
-      ))} */}
-      <div>Tests</div>
-    </CartItemsList>
+    <ProductList>
+      {cartItems.map((item) => (
+        <Product key={item.slug}>
+          <img src={item.thumbnail} alt={item.name} />
+          <ProductName>{item.shortName}</ProductName>
+          <div>{`$ ${item.price}`}</div>
+          <CustomComponent
+            quantityToAdd={item.quantity}
+            item={item}
+            type="cart"
+          />
+        </Product>
+      ))}
+    </ProductList>
   );
 };
 

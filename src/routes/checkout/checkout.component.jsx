@@ -1,13 +1,19 @@
 import React from "react";
 
-import { Main } from "../category/category.styles";
+import { LayoutContainer } from "../../utils/style/layout";
 import GoBackButton from "../../components/shared/go-back-button/go-back-button.component";
+import CheckoutForm from "../../components/checkout/checkout-form/checkout-form.component";
+
+import { CheckoutMain } from "./checkout.styles";
 
 const Checkout = () => {
   return (
-    <Main className="main">
-      <GoBackButton />
-    </Main>
+    <CheckoutMain className="main">
+      <LayoutContainer>
+        <GoBackButton />
+      </LayoutContainer>
+      <CheckoutForm />
+    </CheckoutMain>
   );
 };
 
