@@ -42,6 +42,9 @@ export const ClearButton = styled.button`
     outline: auto;
     outline-color: ${colors.dark};
   }
+  &:hover {
+    color: ${colors.primary};
+  }
 `;
 
 export const Total = styled.span`

@@ -11,6 +11,7 @@ const Checkout = () => {
     <CheckoutMain className="main">
       <LayoutContainer>
         <GoBackButton />
+        <CheckoutForm />
       </LayoutContainer>
       <CheckoutForm />
     </CheckoutMain>
