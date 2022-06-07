@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 import { device } from "../../utils/style/breakpoints";
 import { headerHeight } from "../../utils/style/variables";
+import colors from "../../utils/style/colors";
 
 const mainColGap = {
   desktop: "30px",
@@ -18,12 +19,14 @@ const marginBottom = {
 export const CheckoutMain = styled.main`
   display: flex;
   padding-top: ${headerHeight.desktop};
-  margin-bottom: ${marginBottom.desktop};
+  padding-bottom: ${marginBottom.desktop};
+  background-color: ${colors.tertiary};
+
   @media ${device.tablet} {
     padding-top: ${headerHeight.tablet};
-    margin-bottom: ${marginBottom.tablet};
+    padding-bottom: ${marginBottom.tablet};
   }
   @media ${device.mobileL} {
-    margin-bottom: ${marginBottom.mobileL};
+    padding-bottom: ${marginBottom.mobileL};
   }
 `;

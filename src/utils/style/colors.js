@@ -6,6 +6,7 @@ const colors = {
   primaryHover: "#FABF85",
   light: "#FFFFFF",
   dark: "#000000",
+  error: "#CD2C2C",
 };
 
 export default colors;

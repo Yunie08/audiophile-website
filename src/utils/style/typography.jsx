@@ -86,6 +86,13 @@ export const subTitleStyle = css`
   font-size: 1.3rem;
   line-height: 2.5rem;
   letter-spacing: 0.1rem;
-  ${colors.primary};
+  color: ${colors.primary};
   ${titleStyle}
+`;
+
+export const labelStyle = css`
+  font-size: 1.2rem;
+  letter-spacing: -0.021rem;
+  font-weight: bold;
+  color: ${colors.dark};
 `;

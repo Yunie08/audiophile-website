@@ -8,7 +8,6 @@ import {
 import { errorMessage } from "./errorMessage";
 
 import { countryCodeList } from "./countryList";
-console.log(countryCodeList);
 
 export const orderSchema = Yup.object({
   firstname: Yup.string()
@@ -28,7 +27,7 @@ export const orderSchema = Yup.object({
     .trim()
     .matches(addressPattern, "Invalid address")
     .required(errorMessage.required),
-  zipCode: Yup.number().trim().matches(zipCodePattern, "Invalid ZIP code"),
+  zipCode: Yup.string().matches(zipCodePattern, "Invalid ZIP code"),
   city: Yup.string()
     .trim()
     .matches(namePattern, "Invalid city")
