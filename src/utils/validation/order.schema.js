@@ -27,13 +27,15 @@ export const orderSchema = Yup.object({
     .trim()
     .matches(addressPattern, "Invalid address")
     .required(errorMessage.required),
-  zipCode: Yup.string().matches(zipCodePattern, "Invalid ZIP code"),
+  zipCode: Yup.string()
+    .matches(zipCodePattern, "Invalid ZIP code")
+    .required(errorMessage.required),
   city: Yup.string()
     .trim()
     .matches(namePattern, "Invalid city")
     .required(errorMessage.required),
   country: Yup.string()
     .trim()
-    .oneOf(countryCodeList, "Invalid country. Please provide country code.")
+    .oneOf(countryCodeList, "Invalid country code")
     .required(errorMessage.required),
 });

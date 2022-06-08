@@ -1,7 +1,6 @@
 .cart-modal {
   position: absolute;
   top: 130px;
-
   right: 50px;
   border: 1px solid #ccc;
   background: #fff;
@@ -12,6 +11,7 @@
   padding: 20px;
   width: 377px;
   height: 488px;
+  max-height: 75vh;
   border-radius: 8px;
   padding: 30px 33px;
 

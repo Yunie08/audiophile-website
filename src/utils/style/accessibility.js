@@ -11,3 +11,10 @@ export const srOnly = css`
   white-space: nowrap; /* added line */
   border: 0;
 `;
+
+export const prefersReducedMotion = css`
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+    transform: none;
+  }
+`;

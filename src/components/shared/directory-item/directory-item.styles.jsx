@@ -4,6 +4,7 @@ import colors from "../../../utils/style/colors";
 import { h6Style } from "../../../utils/style/typography";
 import { radiusCards } from "../../../utils/style/variables";
 import { device } from "../../../utils/style/breakpoints";
+import { prefersReducedMotion } from "../../../utils/style/accessibility";
 
 export const marginAdjust = {
   desktop: {
@@ -63,6 +64,15 @@ export const CategoryContainer = styled.div`
     justify-self: center;
     margin: 0 0 0 0;
     height: 20px;
+  }
+
+  &:hover > div {
+    transform: scale(1.2);
+    transition: all 200ms ease-in-out;
+    ${prefersReducedMotion}
+  }
+  & > div {
+    transition: all 300ms ease-in-out;
   }
 `;
 
