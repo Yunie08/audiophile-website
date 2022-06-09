@@ -37,7 +37,7 @@ const Header = () => {
 
         {(isOpen || desktopDisplay) && <NavLinks parent="header" />}
         <NavLink onClick={toggleIsCartOpen} to={{}}>
-          <CartIcon />
+          <CartIcon alt="cart" />
         </NavLink>
         {isCartOpen && <CartModal />}
       </NavContainer>

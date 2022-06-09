@@ -8,19 +8,23 @@ export const ProductList = styled.div`
   display: grid;
   grid-template-rows: 64px;
   row-gap: 24px;
-  max-height: 320px;
+  max-height: ${(props) => props.type === "checkout" && "320px"};
   overflow: auto;
-  margin: 8px 0;
+  margin: ${(props) => props.type === "cart" && "8px 0px"};
 `;
 
 export const Product = styled.div`
   display: grid;
   grid-column: 1 / span 2;
-  grid-template-columns: 64px auto 96px;
+  grid-template-columns: ${(props) =>
+    props.type === "cart" && "64px auto 96px"};
+  grid-template-columns: ${(props) =>
+    props.type === "checkout" && "64px auto min-content"};
   grid-template-rows: repeat(2, 32px);
   row-gap: 0px;
   column-gap: 16px;
   grid-auto-flow: column;
+  font-weight: 700;
   //align-items: center;
 
   img {
@@ -37,12 +41,14 @@ export const Product = styled.div`
     grid-column: 2;
   }
   div:last-child {
-    grid-row: 1 / 3;
+    grid-row: ${(props) => props.type === "cart" && "1 / span 2"};
+    grid-row: ${(props) => props.type === "checkout" && "1"};
     align-self: center;
+    justify-self: flex-end;
+    font-weight: 700;
   }
 `;
 
 export const ProductName = styled.div`
-  font-weight: 700;
   color: ${colors.dark};
 `;

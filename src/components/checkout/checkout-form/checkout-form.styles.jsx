@@ -12,6 +12,7 @@ import { radiusCards } from "../../../utils/style/variables";
 export const Title = styled.h1`
   ${h3Style}
   color: ${colors.dark};
+  margin: 0 0 41px 0;
 `;
 
 export const FormContainer = styled.div`
@@ -53,6 +54,12 @@ export const InputContainer = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 `;
 
 export const Label = styled.label`
@@ -85,7 +92,7 @@ const InputStyling = css`
 export const StyledField = styled(Field)`
   ${InputStyling}
 
-  &[type='radio'] {
+  &[type="radio"] {
     appearance: none;
   }
 `;
@@ -123,7 +130,8 @@ export const PaymentOption = styled.div`
   border-color: ${(props) => props.checked && `${colors.primary}`};
 
   label {
-    margin: 0 0 0 16px;
+    margin: 0;
+    padding-left: 16px;
     flex: 1;
     display: flex;
     height: 100%;
@@ -159,4 +167,12 @@ export const PaymentOption = styled.div`
   }
 `;
 
-export const EMoneyFields = styled.div``;
+export const PaymentInfos = styled.div`
+  display: grid;
+  grid-template-columns: min-content auto;
+  column-gap: 32px;
+  align-items: center;
+  margin p {
+    margin: 0;
+  }
+`;

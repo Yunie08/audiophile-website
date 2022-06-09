@@ -30,9 +30,9 @@ const CartModalContent = React.forwardRef((props, ref) => {
     <CartContentContainer ref={ref}>
       <CartCount>{`cart (${cartCount})`}</CartCount>
       <ClearButton onClick={onDeleteHandler}>Remove all</ClearButton>
-      <CartItemsList cartItems={cartItems} />
+      <CartItemsList cartItems={cartItems} type="cart" />
       <Total>total</Total>
-      <TotalPrice>{`$ ${cartTotalPrice.toLocaleString("en-US")}`}</TotalPrice>
+      <TotalPrice>{cartTotalPrice.toLocaleString("en-US")}</TotalPrice>
       <Button type="base" onClick={onGotoCheckoutHandler}>
         Checkout
       </Button>

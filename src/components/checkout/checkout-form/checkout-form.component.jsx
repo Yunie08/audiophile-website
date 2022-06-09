@@ -10,6 +10,8 @@ import "./checkout-form.styles";
 
 import { COUNTRY_LIST } from "../../../utils/validation/countryList";
 
+import { ReactComponent as CashOnDeliveryIcon } from "../../../static/images/checkout/icon-cash-on-delivery.svg";
+
 // Style
 import {
   Title,
@@ -26,7 +28,7 @@ import {
   PaymentLabel,
   PaymentOptions,
   PaymentOption,
-  EMoneyFields,
+  PaymentInfos,
 } from "./checkout-form.styles";
 
 const CheckoutForm = (children) => {
@@ -216,6 +218,17 @@ const CheckoutForm = (children) => {
                     e-Money
                   </Label>
                 </PaymentOption>
+                <PaymentOption checked={values.payment === "cashOnDelivery"}>
+                  <Field
+                    type="radio"
+                    name="payment"
+                    value="cashOnDelivery"
+                    id="cashOnDelivery"
+                  />
+                  <Label htmlFor="cashOnDelivery" tabindex="0">
+                    Cash on Delivery
+                  </Label>
+                </PaymentOption>
               </PaymentOptions>
             </Fieldset>
             {values.payment === "emoney" && (
@@ -241,7 +254,7 @@ const CheckoutForm = (children) => {
                     htmlFor="emoneyPin"
                     error={touched.emoneyPin && errors.emoneyPin}
                   >
-                    Zip code
+                    e-Money PIN
                   </Label>
                   <StyledField
                     name="emoneyPin"
@@ -253,6 +266,17 @@ const CheckoutForm = (children) => {
                   </ErrorContainer>
                 </InputContainer>
               </FieldsetLayout>
+            )}
+            {values.payment === "cashOnDelivery" && (
+              <PaymentInfos>
+                <CashOnDeliveryIcon />
+                <p>
+                  The 'Cash on Delivery' option enables you to pay in cash when
+                  our delivery courier arrives at your residence. Just make sure
+                  your address is correct so that your order will not be
+                  cancelled.
+                </p>
+              </PaymentInfos>
             )}
           </StyledForm>
           <Summary />

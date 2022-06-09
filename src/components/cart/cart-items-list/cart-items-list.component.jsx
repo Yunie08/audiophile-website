@@ -20,19 +20,21 @@ const CartItemsList = ({ cartItems, type }) => {
   const CustomComponent = getCustomComponent(type);
 
   return (
-    <ProductList>
-      {cartItems.map((item) => (
-        <Product key={item.slug}>
-          <img src={item.thumbnail} alt={item.name} />
-          <ProductName>{item.shortName}</ProductName>
-          <div>{`$ ${item.price}`}</div>
-          <CustomComponent
-            quantityToAdd={item.quantity}
-            item={item}
-            type="cart"
-          />
-        </Product>
-      ))}
+    <ProductList type={type}>
+      {cartItems.length !== 0 &&
+        cartItems.map((item) => (
+          <Product type={type} key={item.slug}>
+            <img src={item.thumbnail} alt={item.name} />
+            <ProductName>{item.shortName}</ProductName>
+            <div>{`$ ${item.price}`}</div>
+            <CustomComponent
+              quantityToAdd={item.quantity}
+              item={item}
+              type={type}
+            />
+          </Product>
+        ))}
+      {cartItems.length === 0 && <span>Your cart is empty</span>}
     </ProductList>
   );
 };

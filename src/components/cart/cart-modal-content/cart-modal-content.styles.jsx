@@ -54,4 +54,12 @@ export const Total = styled.span`
 export const TotalPrice = styled.span`
   ${h6Style};
   justify-self: flex-end;
+  position: relative;
+  letter-spacing: auto;
+
+  &::before {
+    position: absolute;
+    content: "$";
+    left: -20px;
+  }
 `;

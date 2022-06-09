@@ -37,6 +37,17 @@ export const BaseButton = styled.button`
       opacity: 1;
     }
   }
+
+  &:disabled {
+    background: #9c9c9c !important;
+    border: 1px solid #9c9c9c;
+    cursor: default;
+    &:hover {
+      ::after {
+        opacity: 0;
+      }
+    }
+  }
 `;
 
 export const DarkButton = styled(BaseButton)`
