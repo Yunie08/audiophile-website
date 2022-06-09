@@ -80,6 +80,8 @@ export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([]);
   const [cartCount, setCartCount] = useState(0);
   const [cartTotalPrice, setCartTotalPrice] = useState(0);
+  const [cartTotalPriceVAT, setCartTotalPriceVAT] = useState(0);
+  const [cartGrandTotal, setCartGrandTotal] = useState(0);
 
   // useEffect(() => {
   //   setIsCartOpen(false);
@@ -94,6 +96,16 @@ export const CartProvider = ({ children }) => {
   }, [cartItems]);
 
   useEffect(() => {
+    const newCartPriceWithVAT = cartTotalPrice * 0.2;
+    setCartTotalPriceVAT(Math.round(newCartPriceWithVAT));
+  }, [cartTotalPrice]);
+
+  useEffect(() => {
+    const newGrandTotal = cartTotalPrice + cartTotalPriceVAT + 50;
+    setCartGrandTotal(newGrandTotal);
+  }, [cartTotalPrice, cartTotalPriceVAT]);
+
+  useEffect(() => {
     const newCartTotal = cartItems.reduce(
       (cartTotal, item) => cartTotal + item.quantity * item.price,
       0
@@ -102,20 +114,25 @@ export const CartProvider = ({ children }) => {
   }, [cartItems]);
 
   const toggleIsCartOpen = () => setIsCartOpen(!isCartOpen);
+
   const addItemToCart = (productToAdd, quantityToAdd) => {
     setCartItems(addCartItem(cartItems, productToAdd, quantityToAdd));
   };
+
   const removeItemFromCart = (productToDelete, quantityToDelete = 1) => {
     setCartItems(
       deleteSomeCartItem(cartItems, productToDelete, quantityToDelete)
     );
   };
+
   const setCartItemQuantity = (productToEdit, quantityToSet) => {
     setCartItems(setItemQuantity(cartItems, productToEdit, quantityToSet));
   };
+
   const clearItemFromCart = (productToDelete) => {
     setCartItems(deleteCartItem(cartItems, productToDelete));
   };
+
   const clearCart = () => setCartItems([]);
 
   const value = {
@@ -130,6 +147,8 @@ export const CartProvider = ({ children }) => {
     cartCount,
     cartTotalPrice,
     setCartItemQuantity,
+    cartTotalPriceVAT,
+    cartGrandTotal,
   };
 
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
