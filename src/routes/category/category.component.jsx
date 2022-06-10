@@ -8,16 +8,19 @@ import CompanyFocus from "../../components/shared/company-focus/company-focus.co
 
 // Styled components
 import { Main } from "./category.styles";
+import ErrorBoundary from "../../components/shared/error-boundary/error-boundary.component";
 
 const Category = () => {
   const { category } = useParams();
 
   return (
     <Main className="main">
-      <CategoryHeader category={category} />
-      <CategoryProducts category={category} />
-      <Directory />
-      <CompanyFocus />
+      <ErrorBoundary>
+        <CategoryHeader category={category} />
+        <CategoryProducts category={category} />
+        <Directory />
+        <CompanyFocus />
+      </ErrorBoundary>
     </Main>
   );
 };

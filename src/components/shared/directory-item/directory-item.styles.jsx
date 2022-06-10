@@ -67,8 +67,8 @@ export const CategoryContainer = styled.div`
   }
 
   &:hover > div {
-    transform: scale(1.2);
-    transition: all 200ms ease-in-out;
+    transform: scale(1.12);
+    transition: all 250ms ease-in-out;
     ${prefersReducedMotion}
   }
   & > div {

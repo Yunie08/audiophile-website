@@ -4,6 +4,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { ProductsContext } from "../../utils/contexts/products.context";
 import { CurrentProductContext } from "../../utils/contexts/currentProduct.context";
 
+import ErrorBoundary from "../../components/shared/error-boundary/error-boundary.component";
 import { LayoutContainer } from "../../utils/style/layout";
 import { MainProductPage } from "./product.styles";
 import GoBackButton from "../../components/shared/go-back-button/go-back-button.component";
@@ -29,12 +30,14 @@ const Product = () => {
 
   return (
     <MainProductPage className="main">
-      <LayoutContainer>
-        <GoBackButton />
-        {!isLoading && <ProductPresentation />}
-      </LayoutContainer>
-      <Directory />
-      <CompanyFocus />
+      <ErrorBoundary>
+        <LayoutContainer>
+          <GoBackButton />
+          {!isLoading && <ProductPresentation />}
+        </LayoutContainer>
+        <Directory />
+        <CompanyFocus />
+      </ErrorBoundary>
     </MainProductPage>
   );
 };
