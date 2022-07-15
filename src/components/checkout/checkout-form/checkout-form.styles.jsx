@@ -8,6 +8,7 @@ import {
 } from "../../../utils/style/typography";
 import colors from "../../../utils/style/colors";
 import { radiusCards } from "../../../utils/style/variables";
+import { device } from "../../../utils/style/breakpoints";
 
 export const Title = styled.h1`
   ${h3Style}
@@ -19,12 +20,21 @@ export const FormContainer = styled.div`
   display: grid;
   grid-template-columns: 2fr 1fr;
   column-gap: 30px;
+  row-gap: 32px;
+
+  @media ${device.tablet} {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const StyledForm = styled(Form)`
   background-color: ${colors.light};
   padding: 48px;
   border-radius: ${radiusCards};
+
+  @media ${device.mobileL} {
+    padding: 24px;
+  }
 `;
 
 export const Fieldset = styled.fieldset`
@@ -35,6 +45,11 @@ export const Fieldset = styled.fieldset`
   display: ${(props) => props.type === "payment" && "grid"};
   grid-template-columns: ${(props) =>
     props.type === "payment" && "repeat(2, 1fr)"};
+  column-gap: ${(props) => props.type === "payment" && "16px"};
+
+  @media ${device.mobileL} {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const Legend = styled.legend`
@@ -48,6 +63,10 @@ export const FieldsetLayout = styled.div`
   grid-template-columns: repeat(2, 1fr);
   column-gap: 16px;
   row-gap: 24px;
+
+  @media ${device.mobileL} {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const InputContainer = styled.div`
@@ -59,6 +78,11 @@ export const InputContainer = styled.div`
   input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+  }
+  grid-column: ${(props) => props.type === "address" && "1 / 3"};
+
+  @media ${device.mobileL} {
+    grid-column: ${(props) => props.type === "address" && "1 / 2"};
   }
 `;
 
@@ -158,7 +182,7 @@ export const PaymentOption = styled.div`
       height: 0.65em;
       border-radius: 50%;
       transform: scale(0);
-      transition: 120ms transform ease-in-out;
+      /* transition: 50ms transform ease-in-out; */
       box-shadow: inset 1em 1em ${colors.primary};
     }
     &:checked::before {

@@ -123,7 +123,7 @@ const CheckoutForm = (children) => {
             <Fieldset>
               <Legend>Shipping info</Legend>
               <FieldsetLayout>
-                <InputContainer style={{ gridColumn: "1 / 3" }}>
+                <InputContainer type="address">
                   <Label
                     htmlFor="address"
                     error={touched.address && errors.address}
